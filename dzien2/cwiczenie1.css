@@ -51,7 +51,7 @@ div
     color: red;
     display: flex;
     align-items: center;
-    jutsyfy-content: center;
+    justify-content: center;
 }
 
 .footer
