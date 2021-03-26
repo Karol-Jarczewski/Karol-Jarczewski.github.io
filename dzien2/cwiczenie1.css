@@ -18,13 +18,13 @@ div
 {
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .gif
 {
     padding: 6%;
-    border:2px solid blue;
+    border: 2px solid blue;
     color: blue;
 }
 
@@ -57,5 +57,5 @@ div
 .footer
 {
     padding: 20px 0;
-    text-align: right;
+    text-align: center;
 }
