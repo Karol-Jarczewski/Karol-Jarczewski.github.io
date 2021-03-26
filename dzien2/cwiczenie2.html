@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .sprites
+        {
+            border: 2px dashed red;
+            width: 90px;
+            height: 90px;
+            background-image: url("sprites.jpg");
+            /* background-position: 0 -180px; */
+        }
+
+        .sprites:hover
+        {
+            background-position: 0 -99px;
+        }
+
+        .sprites:active
+        {
+            background-position: 0 -180px;
+        }
+    </style>
+    <div class="sprites"></div>
+</body>
+</html>
