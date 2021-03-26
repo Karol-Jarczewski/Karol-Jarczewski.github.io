@@ -16,20 +16,46 @@ div
 
 .subtitle
 {
-    padding:10px;
-    display:flex;
+    padding: 10px;
+    display: flex;
     justify-content: space-evenly;
 }
 
 .gif
 {
-    padding:6%;
+    padding: 6%;
     border:2px solid blue;
     color: blue;
 }
 
-.content
+.content 
 {
-    display:flex;
+    display: flex;
     justify-content: center;
+    padding: 6%;
+}
+
+.displayGif
+{
+    flex: 3;
+}
+
+.descGif
+{
+    flex: 2;
+}
+
+.content div
+{
+    height: 200px;
+    color: red;
+    display: flex;
+    align-items: center;
+    jutsyfy-content: center;
+}
+
+.footer
+{
+    padding: 20px 0;
+    text-align: right;
 }
