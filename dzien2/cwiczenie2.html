@@ -5,16 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <style>
-        .sprites
+        body
+        {
+            background-color: antiquewhite;
+        }
+
+        div
+        {
+            border: 2px dashed red;
+        }
+
+        .header
+        {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 0;
+        }
+
+        .nav
+        {
+            width: 60%;
+        }
+
+
+        .menu
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .wykres1
+        {
+            border: 2px dashed blue;
+            height: 2in;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .slupek
+        {
+            width: 12%;
+            background-color: aqua;
+        }
+
+        .s1{height: 1in;}
+        .s2{height: 1cm;}
+        .s3{height: 1mm;}
+        .s4{height: 1px;}
+        .s5{height: 1pt;}
+
+        /* .sprites
         {
             border: 2px dashed red;
             width: 90px;
             height: 90px;
             background-image: url("sprites.jpg");
-            /* background-position: 0 -180px; */
         }
 
         .sprites:hover
@@ -25,8 +71,29 @@
         .sprites:active
         {
             background-position: 0 -180px;
-        }
+        } */
     </style>
-    <div class="sprites"></div>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="menu">
+                <div>Absolutne</div>
+                <div>Relatywne</div>
+                <div>Czcionki</div>
+            </div>
+        </div>
+    </div>
+    <div class="absolutne">
+        <div class="wykres1">
+            <div class="slupek s1"></div>
+            <div class="slupek s2"></div>
+            <div class="slupek s3"></div>
+            <div class="slupek s4"></div>
+            <div class="slupek s5"></div>
+        </div>
+    </div>
+    <!-- <div class="sprites"></div> -->
 </body>
 </html>
