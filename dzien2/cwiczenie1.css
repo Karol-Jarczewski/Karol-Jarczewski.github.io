@@ -1,0 +1,35 @@
+body
+{
+    background-color: deepskyblue;
+}
+
+div
+{
+    border: 2px dashed red;
+}
+
+.title
+{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.subtitle
+{
+    padding:10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.gif
+{
+    padding:6%;
+    border:2px solid blue;
+    color: blue;
+}
+
+.content
+{
+    display:flex;
+    justify-content: center;
+}
