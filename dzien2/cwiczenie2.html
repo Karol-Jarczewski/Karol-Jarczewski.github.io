@@ -32,7 +32,23 @@
             width: 60%;
         }
 
+        .logo
+        {
+            border: 2px dashed red;
+            width: 90px;
+            height: 90px;
+            background-image: url("logo.png");
+        }
 
+        .logo:hover
+        {
+            background-position: 0 -90px;
+        }
+
+        .logo:active
+        {
+            background-position: 0 -180px;
+        }
         .menu
         {
             display: flex;
@@ -68,29 +84,12 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
-        /* .sprites
-        {
-            border: 2px dashed red;
-            width: 90px;
-            height: 90px;
-            background-image: url("sprites.jpg");
-        }
-
-        .sprites:hover
-        {
-            background-position: 0 -99px;
-        }
-
-        .sprites:active
-        {
-            background-position: 0 -180px;
-        } */
     </style>
 </head>
 <body>
     <div class="header">
         <div class="nav">
-            <div class="logo" alt="logo">logo.jpg</div>
+            <div class="logo" alt="logo"></div>
             <div class="menu">
                 <div>Absolutne</div>
                 <div>Relatywne</div>
