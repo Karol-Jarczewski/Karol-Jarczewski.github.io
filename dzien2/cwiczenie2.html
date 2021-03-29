@@ -60,6 +60,7 @@
             border: 2px dashed blue;
             height: 2in;
             display: flex;
+            /* space-evenly równe odstępy wszędzie  */
             justify-content: space-evenly;
         }
 
@@ -77,12 +78,43 @@
 
         .wykres2
         {
-            border: 2px dashed blue;
-            height: 8in;
-            margin-top: 15%;
+            border: 5px dashed blue;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+        }
+
+        h3
+        {
+            margin: 55px 0 15px 10px;
+        }
+        .slPion
+        {
+            height: 12%;
+            padding: 5%;
+            margin: 10px 0;
+            background-color: aqua;
+        }
+        .sl1{width: 50%;}
+        .sl2{width: 10vh;}
+        .sl3{width: 10vw;}
+        .sl4{width: 10vw;}
+        .sl5{width: 10pt;}
+
+        .footer
+        {
+            float: right;
+            color: red;
+            border: none;
+            border-top: 2px;
+            margin: 25px 10px;
+        }
+
+        .emm
+        {
+            font-size: 2em;
+            float: right;
+            color: red;
+            border: none;
         }
     </style>
 </head>
@@ -98,6 +130,7 @@
         </div>
     </div>
     <div class="absolutne">
+        <h3>Absolutne</h3>
         <div class="wykres1">
             <div class="slupek s1"></div>
             <div class="slupek s2"></div>
@@ -106,15 +139,28 @@
             <div class="slupek s5"></div>
         </div>
     </div>
-
+<!-- WYKRES 2 -->
     <div class="absolutne">
+        <h3>Relatywne</h3>
         <div class="wykres2">
-            <div class="slupek s1"></div>
-            <div class="slupek s2"></div>
-            <div class="slupek s3"></div>
-            <div class="slupek s4"></div>
-            <div class="slupek s5"></div>
+            <div class="slPion sl1"></div>
+            <div class="slPion sl2"></div>
+            <div class="slPion sl3"></div>
+            <div class="slPion sl4"></div>
+            <div class="slPion sl5"></div>
         </div>
+    </div>
+
+    <div class="footer">
+        <div class="emm">
+         Jak
+             <div class="emm">
+              to
+                  <div class="emm">
+                   zrobić?
+                  </div>
+              </div>
+         </div>
     </div>
     <!-- <div class="sprites"></div> -->
 </body>

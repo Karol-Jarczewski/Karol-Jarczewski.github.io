@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .parent
+        {
+            border: 5px dashed blue;
+            margin-bottom: 150px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+
+            /*zamienia pozycjonowanie elementów z poziomego justify-content na PIONOWE i równorzędnie dla align-items */
+            flex-direction: column; 
+
+            /* pozycjonowanie PIONOWE gdy flex-direction: column */
+            justify-content: space-between;
+
+        }
+    </style>
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+
+
+    </style>
+</body>
+</html>
