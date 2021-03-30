@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: rgb(236, 176, 176);
+        }
+
+        .static
+        {
+            position: static;
+            text-align: center;
+        }
+
+        .sticky
+        {
+            border: 5px solid rgb(165, 21, 231);
+            background-color: rgb(195, 94, 241);
+            padding: 2% 5%;
+            position: sticky;
+            top: 80px;
+            z-index:1;
+        }
+
+        .fixed
+        {
+            border: 5px solid rgb(165, 21, 231);
+            background-color: rgb(195, 94, 241);
+            padding: 2% 5%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index:1;
+        }
+
+        .content
+        {
+            display:  flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            border: 5px dashed blue;
+            padding: 7% 0;
+            margin-bottom: 10%;
+        }
+
+        .relative
+        {
+            border: 10px dashed red;
+            width: 45vw;
+            height: 40vw;
+            position: relative;
+            margin-bottom: 5%;
+        }
+
+        .absolute
+        {
+            border: 10px solid #000;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background-color: #fff;
+            background-size: cover;
+        }
+
+        .clickable:active
+        {
+            opacity:0;
+            transition: 1s;
+        }
+
+        .img1{background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);}
+        .img2{background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/zebra.jpg?raw=true);}
+        .img3{background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/nosorozec.jpg?raw=true);}
+        .img4{background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true);}
+
+
+
+        /* .a1{z-index:1;}
+        .a2{z-index:2;} */
+
+        @media (max-device-width: 748px)
+        {
+            .relative
+            {
+                width:80vw;
+                height:80vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        Ta strone nie używa ciasteczek
+    </div>
+    <div class="sticky">Zwierzęta</div>
+    <div class="fixed">Zainteresowany budowanem stron internetowych ?
+        <a href="https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true">Kliknij tutaj</a>
+    </div>
+    <div class="content">
+    <div class="relative">
+        <div class="absolute a1 img1">
+            Zdjęcie Słonia
+        </div>
+        <div class="absolute a2 clickable">
+            Kliknija aby zobaczyć Słonia
+        </div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute a1 img2">
+            Zdjęcie Zebry
+        </div>
+        <div class="absolute a2 clickable">
+            Kliknija aby zobaczyć Zebre
+        </div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute a1 img3">
+            Zdjęcie Nosorożca
+        </div>
+        <div class="absolute a2 clickable">
+            Kliknija aby zobaczyć Nosorożnca
+        </div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute a1 img4">
+            Zdjęcie Lwa
+        </div>
+        <div class="absolute a2 clickable">
+            Kliknija aby zobaczyć Lwa
+        </div>
+    </div>
+    </div>
+</body>
+</html>
