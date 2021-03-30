@@ -35,14 +35,23 @@
         .sticky:hover
         {
             background-color: #5adb40;
+            border: 1px solid #000;
             transition: 1.5s;
+        }
+
+        p > .sticky:hover
+        {
+            /* NIE DZIAŁA */
+            margin-left: 350px;
+            transition-duration: 1.5s;
+            transform: scaleX(1.5);
         }
 
         .sticky:active
         {
             /* height: 150px; */
             transition: 2s;
-            transition: scale(1.5);
+            transform: scale (1.5);
         }
 
         .fixed
@@ -124,7 +133,7 @@
     <div class="static">
         Ta strone nie używa ciasteczek
     </div>
-    <div class="sticky">Zwierzęta</div>
+    <div class="sticky"><p>Zwierzęta</p></div>
     <div class="fixed">Zainteresowany tematyką zwierząt ?
         <a href="https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true">Kliknij tutaj</a>
     </div>
