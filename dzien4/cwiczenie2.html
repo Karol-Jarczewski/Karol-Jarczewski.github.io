@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontello.css">
+    <title>Dzień 4 Ćwiczenie 2</title>
+
+    <style>
+        .grid
+        {
+            border:2px dashed red;
+            display: grid;
+            grid-template-areas:
+            "abaut info projects"
+            "github mail projects";
+            gap:5px;
+        }
+
+        h3,p
+        {
+            margin:0;
+        }
+
+        a
+        {
+            border:2px dashed grey;
+            color:inherit;
+            text-decoration: none;
+            display:flex;
+            justify-content:center;
+            flex-direction: column;
+            align-items: center;
+            padding:20% 0;
+            font-size:1.5em;
+        }
+
+        .grid > a:hover
+            {
+                font-size: 36px;
+                transition: 1s;
+            }
+
+        a:nth-child(1){grid-area:abaut;}
+        a:nth-child(2){grid-area:info;}
+        a:nth-child(3){grid-area:projects;}
+        a:nth-child(4){grid-area:github;}
+        a:nth-child(5){grid-area:mail;}
+
+        .footer
+        {
+            border:2px solid #000;
+            text-align: right;
+        }
+
+        @media (max-device-width: 740px)
+        {
+            a:nth-child()
+            {
+                
+            }
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Front Webdeveloper</h1>
+    <div class="grid">
+        <a href="#">
+            <i class="icon-user"></i>
+            <p>O mnie</p>
+        </a>
+        <a href="#">
+            <i class="icon-info"></i>
+            <p>O mnie</p>
+        </a>
+        <a href="#">
+            <i class="icon-docs"></i>
+            <p>O mnie</p>
+        </a>
+        <a href="#">
+            <i class="icon-github-circled"></i>
+            <p>O mnie</p>
+        </a>
+        <a href="#">
+            <i class="icon-mail"></i>
+            <p>O mnie</p>
+        </a>
+    </div>
+    <div class="footer">Copyright by Karol Jarczewski</div>
+
+
+</body>
+</html>
