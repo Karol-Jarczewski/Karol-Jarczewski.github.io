@@ -26,8 +26,11 @@
         
         .topNav
         {
+            position: sticky;
+            top: 0;
+            background-color: brown;
             border: 2px dashed#fff;
-            padding: 5%;
+            padding: 2%;
         }
         ol
         {
@@ -35,12 +38,13 @@
             margin: 0;
             color:#fff;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         li
         {
             list-style-type: none;
+            /* padding: 15px; */
         }
 
         ul
@@ -59,15 +63,15 @@
         ul > li
         {
             background-color: grey;
-            border: 2px dashed #fff;
+            border-bottom: 2px dashed #fff;
             padding: 15px;
         }
 
         ol > li
         {
             position: relative;
-            border: 2px dashed #fff;
-            padding: 10px 15px;
+            /* border: 2px dashed #fff; */
+            /* padding: 10px 15px; */
         }
 
         ol > li:hover > ul
@@ -85,7 +89,15 @@
         main
         {
             border: 2px solid #fff;
+            padding: 1%;
             flex: 3;
+        }
+
+        aside
+        {
+            border: 2px solid red;
+            padding: 1%;
+            flex: 1;
         }
 
         .recommend
@@ -148,12 +160,12 @@
     
     <div class="content">
         <main>
-            <header>
-                <img src="article.jpg" alt="nie che wyświetlić MŁOTKA">
+            <header>            
                 <h1>Tytuł</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, earum.
                 </p>
+                <img src="article.jpg" alt="nie che wyświetlić MŁOTKA">
             </header>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
@@ -164,7 +176,30 @@
             </p>
         </main>
         <aside class="recommend">
-            Polecane artykuły
+            <h5>Polecane artykuły</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
+            </p>
+
+            <h5>Polecane artykuły</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
+            </p>
+
+            <h5>Polecane artykuły</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
+            </p>
+
+            <h5>Polecane artykuły</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
+            </p>
+
+            <h5>Polecane artykuły</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
+            </p>
         </aside>
     </div>
 
