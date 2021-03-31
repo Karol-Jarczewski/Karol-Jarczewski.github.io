@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzien 5 Ćwiczenie 1</title>
+
+    <style>
+
+        body
+        {
+            background-image: url(black_thread.png);
+            color: grey;
+        }
+
+        img
+        {
+            max-width: 100%;
+            z-index: 9999;
+        }
+
+        .topHeader
+        {
+            text-align: center;
+        }
+        .topNav
+        {
+            border: 2px dashed#fff;
+            padding: 5%;
+        }
+        ol
+        {
+            padding: 0;
+            margin: 0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li
+        {
+            list-style-type: none;
+        }
+
+        ul
+        {
+            display:none;
+            border: 2px dashed red;
+            position: absolute;
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        ul > li
+        {
+            border: 2px dashed red;
+        }
+
+        ol > li
+        {
+            position: relative;
+            border: 2px dashed #fff;
+            padding: 10px 15px;
+        }
+
+        ol > li:hover > ul
+        {
+            display: flex;
+        }
+
+        .content
+        {
+            display: flex;
+        }
+
+        .recommend
+        {
+            border: 2px solid #fff;
+        }
+
+        main
+        {
+            border: 2px solid #fff;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="topNav">
+        <ol>
+            <li>
+                PrawoCywilne
+             <ul>
+                 <li>Artykuły</li>
+                 <li>Doradztwo</li>
+                 <li>Zadaj pytanie</li>
+             </ul>
+            </li>
+
+            <li>
+                Prawo Cywilne
+             <ul>
+                 <li>Artykuły</li>
+                 <li>Doradztwo</li>
+                 <li>Zadaj pytanie</li>
+             </ul>
+            </li>
+
+            <li>
+                Prawo Karne
+             <ul>
+                 <li>Artykuły</li>
+                 <li>Doradztwo</li>
+                 <li>Zadaj pytanie</li>
+             </ul>
+            </li>
+
+            <li>
+                Prawo Gospodarcze
+             <ul>
+                 <li>Artykuły</li>
+                 <li>Doradztwo</li>
+                 <li>Zadaj pytanie</li>
+             </ul>
+            </li>
+
+            <li>
+                Prawo Pracy
+             <ul>
+                 <li>Artykuły</li>
+                 <li>Doradztwo</li>
+                 <li>Zadaj pytanie</li>
+             </ul>
+            </li>
+        </ol>
+    </nav>
+    
+    <div class="content">
+        <main>
+            <header>
+                <img scr="article.jpg" alt="MŁOTEK">
+                <h1>Tytuł</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, earum.
+                </p>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui enim molestias sapiente ipsa vel fuga obcaecati ex beatae. Consequuntur libero sint obcaecati aliquam minus blanditiis fuga suscipit unde amet.
+                Nemo at ipsum fugit necessitatibus amet deserunt quaerat delectus nesciunt illo quidem. Facere et quisquam perferendis. Molestias pariatur dolorum sint, repellendus esse quaerat expedita! Animi voluptatibus sed consequuntur modi distinctio.
+                Ut, ullam est dolores culpa, ipsa nesciunt voluptas veritatis aliquam expedita quaerat, perferendis odit optio ea quibusdam similique quas commodi odio nam dolorem. Ullam rem quis unde rerum obcaecati cumque!
+                Quasi quod beatae nobis adipisci quos nemo et enim accusantium maxime doloribus veniam, qui architecto laudantium blanditiis quaerat commodi eveniet. Quasi non placeat sit quaerat error quod id a rerum.
+                Ab sequi eveniet incidunt culpa harum sit ex fugiat. Debitis at tempore praesentium accusamus ut iusto, veritatis aliquam fugiat? Quo aspernatur blanditiis, optio culpa fuga incidunt eos ab cum reiciendis?
+            </p>
+        </main>
+        <aside class="recommend">
+            Polecane artykuły
+        </aside>
+    </div>
+
+</body>
+</html>
