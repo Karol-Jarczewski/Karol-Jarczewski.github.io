@@ -2,7 +2,7 @@
 
 // const number = 1;
 
-
+// Tworzenie obiektów
 const views = [
     {
     
@@ -11,26 +11,70 @@ const views = [
     }, 
     // po przecinku robi się całe tablice obiektów
     {
-        title2 : "Zachód ślońca pod palmami",
+        title : "Zachód ślońca pod palmami",
         src : "img/2.jpg"
+    },
+
+    {
+        title : "Warszawa w budowie",
+        src : "3.jpg"
     }
     ];
 
+    // PUNKT 2 FUNKCJA WYŚWIETLAJĄCA KONKRETNY ELEMENT 
     function displayViews(index){
     const titleField = document.querySelector("h2");
-    titleField.innerHTML - views[0].title;
+    titleField.innerHTML - views[index].title;
 
     const imgField = document.querySelector(".content");
-    // imgField.innerHTML = "Hello World";
+    imgField.innerHTML = "Hello World";
 
     // Tworzenie tagów HTML
 const img = document.createElement("img"); 
-img.src = views[0].src;
+img.src = views[index].src;
 imgField.append(img);
 
     }
 
-    displayViews(2);
+    // PUNKT 3 ZMIENNA ZMIENIAJĄCA NUMERY SLAJDÓW
+    let currentSlide = 0;
 
-    console.log(img);
-    console.log(views);
+    // WYWOŁANIE FUNKCJI Z PUNKTU 2 Z DOMYŚLNĄ WARTOŚCIĄ
+    // żeby wyświetlił się element (graficzny)
+    displayView (currentSlide);
+
+    // PUNKT 4 PRZEŁĄCZANIE SLJAJDÓW
+
+    function changeSlide (direction)
+    {
+        if (direction == "left")
+        {
+            currentSlide--;
+            if (currentSlide < 0)
+            {
+                currentSlide = view.length-1;
+            }
+
+            else
+            {
+                currentSlide++;
+                if (currentSlide > views.length-1)
+                {
+                    currentSlide = 0;
+                }
+            }
+            console.log (currentSlide);
+            displayView (currentSlide);
+        }
+
+        // PUNSKT 5 POBIERAMY STRZAŁKI Z HTMLA
+        const leftArr = document.querySelector(".left");
+
+        // FUNKCJA PO KLIKNIĘCIU
+        leftArr.onclink = () => {changeSlide ("left")};
+        const rightArr = document.querySelector(".right");
+        rightArr.onclick = () => {changeSlide ("right")};
+    }
+
+
+    
