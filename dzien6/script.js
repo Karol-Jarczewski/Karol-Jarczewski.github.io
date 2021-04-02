@@ -71,7 +71,7 @@ imgField.append(img);
         const leftArr = document.querySelector(".left");
 
         // FUNKCJA PO KLIKNIĘCIU
-        leftArr.onclink = () => {changeSlide ("left")};
+        leftArr.onclick = () => {changeSlide ("left")};
         const rightArr = document.querySelector(".right");
         rightArr.onclick = () => {changeSlide ("right")};
     }
