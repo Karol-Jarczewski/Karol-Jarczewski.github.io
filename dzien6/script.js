@@ -6,12 +6,12 @@
 const views = [
     {
     
-        title : "Obrazek",
+        title : "Zachód ślońca pod palmami",
         src : "img/1.jpg"
     }, 
     // po przecinku robi się całe tablice obiektów
     {
-        title : "Zachód ślońca pod palmami",
+        title : "Widok z góry",
         src : "img/2.jpg"
     },
 
