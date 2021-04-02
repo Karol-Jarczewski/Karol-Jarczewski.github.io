@@ -27,7 +27,7 @@ const views = [
     titleField.innerHTML - views[index].title;
 
     const imgField = document.querySelector(".content");
-    imgField.innerHTML = "Hello World";
+    imgField.innerHTML = "";
 
     // Tworzenie tagów HTML
 const img = document.createElement("img"); 
@@ -41,7 +41,7 @@ imgField.append(img);
 
     // WYWOŁANIE FUNKCJI Z PUNKTU 2 Z DOMYŚLNĄ WARTOŚCIĄ
     // żeby wyświetlił się element (graficzny)
-    displayView (currentSlide);
+    displayViews (currentSlide);
 
     // PUNKT 4 PRZEŁĄCZANIE SLJAJDÓW
 
