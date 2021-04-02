@@ -52,7 +52,7 @@ imgField.append(img);
             currentSlide--;
             if (currentSlide < 0)
             {
-                currentSlide = view.length-1;
+                currentSlide = views.length-1;
             }
 
             else
@@ -64,17 +64,17 @@ imgField.append(img);
                 }
             }
             console.log (currentSlide);
-            displayView (currentSlide);
+            displayViews (currentSlide);
         }
-
+    }
         // PUNSKT 5 POBIERAMY STRZAŁKI Z HTMLA
         const leftArr = document.querySelector(".left");
 
         // FUNKCJA PO KLIKNIĘCIU
-        leftArr.onclick = () => {changeSlide ("left")};
+        leftArr.onclick = () => {changeSlide("left")};
         const rightArr = document.querySelector(".right");
         rightArr.onclick = () => {changeSlide ("right")};
-    }
+    
 
 
     
