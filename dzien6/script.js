@@ -54,7 +54,7 @@ imgField.append(img);
             {
                 currentSlide = views.length-1;
             }
-
+        }
             else
             {
                 currentSlide++;
@@ -66,7 +66,7 @@ imgField.append(img);
             console.log (currentSlide);
             displayViews (currentSlide);
         }
-    }
+    
         // PUNSKT 5 POBIERAMY STRZAŁKI Z HTMLA
         const leftArr = document.querySelector(".left");
 
