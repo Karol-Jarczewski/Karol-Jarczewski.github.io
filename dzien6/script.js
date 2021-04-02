@@ -11,7 +11,7 @@ const views = [
     }, 
     // po przecinku robi się całe tablice obiektów
     {
-        title2 : "Zachód ślońca pod palmami";
+        title2 : "Zachód ślońca pod palmami",
         src : "img/2.jpg"
     }
     ];
@@ -25,7 +25,7 @@ const views = [
 
     // Tworzenie tagów HTML
 const img = document.createElement("img"); 
-img.src = "img/" + views[0].src;
+img.src = views[0].src;
 imgField.append(img);
 
     }
