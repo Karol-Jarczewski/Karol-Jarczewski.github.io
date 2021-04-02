@@ -17,14 +17,14 @@ const views = [
 
     {
         title : "Warszawa w budowie",
-        src : "3.jpg"
+        src : "img/3.jpg"
     }
     ];
 
     // PUNKT 2 FUNKCJA WYŚWIETLAJĄCA KONKRETNY ELEMENT 
     function displayViews(index){
     const titleField = document.querySelector("h2");
-    titleField.innerHTML - views[index].title;
+    titleField.innerHTML = views[index].title;
 
     const imgField = document.querySelector(".content");
     imgField.innerHTML = "";
