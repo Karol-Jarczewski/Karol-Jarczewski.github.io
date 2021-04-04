@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforma do Nauki</title>
+
+    <style>
+          [contenteditable="true"] {
+    outline: none;
+    width: 300px;
+    overflow: hidden;
+    background-color: grey;
+    color: #000;
+    border: 2px solid black;
+  }
+  [contentEditable="true"]:empty:not(:focus):before {
+    content: attr(data-text);
+    font-size: 12px;
+    color: gray;
+    cursor: text;
+  }
+  [id="key-code"] {
+    width: 300px;
+    overflow: auto;
+  }
+
+  .textarea
+  {
+    font-size: 2
+  }
+    </style>
+</head>
+<body>
+    <div id="fake-input" contenteditable="true" data-text="wpisz: przykładowy tekst">Karol Jarczewski</div>
+<!--     <pre id="key-code"></pre> -->
+<!-- <div class="textarea">abcdefghijklmnoprstuwxyz</div> -->
+
+<script>
+    const fake_input = document.getElementById("fake-input");
+const key_code = document.getElementById("key-code");
+
+fake_input.addEventListener("keydown", (event) => {
+  if (event.isComposing || event.keyCode === 229) {
+    return;
+  }
+  
+  let fore_color = "";
+
+  switch(event.keyCode) {
+    case 65: // litera A
+      fore_color = "darkorange";
+      break;
+    case 66: // litera B
+      fore_color = "olivedrab";
+      break;
+    case 67: // litera C
+      fore_color = "champagne";
+      break;
+      case 68: // litera D
+      fore_color = "amber";
+      break;
+    case 69: // litera E
+      fore_color = "mediumseagreen";
+      break;
+    case 70: // litera F
+      fore_color = "darkslateblue";
+      break;   
+      case 71: // litera G
+      fore_color = "grape";
+      break;
+    case 72: // litera H
+      fore_color = "darkturquoise";
+      break;
+    case 73: // litera I
+      fore_color = "darkcyan";
+      break;
+      case 74: // litera J
+      fore_color = "lightblue";
+      break;
+    case 75: // litera K
+      fore_color = "limegreen";
+      break;
+    case 76: // litera L
+      fore_color = "lightcoral";
+      break; 
+      case 77: // litera M
+      fore_color = "mahogany";
+      break;
+    case 78: // litera N
+      fore_color = "darkorange";
+      break;
+    case 79: // litera O
+      fore_color = "orangered";
+      break;
+      case 80: // litera P
+      fore_color = "pastelpink";
+      break;
+    case 82: // litera R
+      fore_color = "royalblue";
+      break;
+    case 83: // litera S
+      fore_color = "salmon";
+      break;   
+      case 84: // litera T
+      fore_color = "tangerine ";
+      break;
+    case 85: // litera U
+      fore_color = "goldenrod";
+      break; 
+      case 86: // litera V
+      fore_color = "darkviolet";
+      break;
+    case 87: // litera W
+      fore_color = "red";
+      break;
+    case 88: // litera X
+      fore_color = "rosybrown";
+      break;
+      case 89: // litera Y
+      fore_color = "brown";
+      break;
+    case 90: // litera Z
+      fore_color = "ash";
+      break;
+    default:
+      fore_color = "white";
+  }
+
+  key_code.innerHTML += " " + event.keyCode;
+  document.execCommand('foreColor', false, fore_color);
+})
+</script>
+</body>
+</html>
