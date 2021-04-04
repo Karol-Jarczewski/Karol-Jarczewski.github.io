@@ -9,7 +9,8 @@
     <style>
           [contenteditable="true"] {
     outline: none;
-    width: 300px;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
     background-color: grey;
     color: #000;
@@ -17,11 +18,11 @@
   }
   [contentEditable="true"]:empty:not(:focus):before {
     content: attr(data-text);
-    font-size: 12px;
+    font-size: 26px;
     color: gray;
     cursor: text;
   }
-  [id="key-code"] {
+  /* [id="key-code"] { */
     width: 300px;
     overflow: auto;
   }
@@ -34,7 +35,7 @@
 </head>
 <body>
     <div id="fake-input" contenteditable="true" data-text="wpisz: przykładowy tekst"></div>
-<!--     <pre id="key-code"></pre> -->
+    <pre id="key-code"></pre>
 <!-- <div class="textarea">abcdefghijklmnoprstuwxyz</div> -->
 
 <script>
