@@ -1,4 +1,61 @@
 body
 {
     background-color: lightblue;
+    padding: 0;
+    margin:0;
+}
+
+.row1
+{
+    margin-top: 4%;
+}
+
+.head, .neck, .hands, .thighs, .legs, .feet
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box
+{
+    width:50px;
+    height:50px;
+    /* border: 2px solid brown; */
+    background-color: brown;
+}
+
+.box-neck
+{
+    width: 20px;
+    height: 30px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+.torso
+{   display: flex;
+    justify-content: center;
+}
+
+.armL
+{
+    border: 2px solid;
+    width: 100px;
+    height: 50px;
+}
+
+.tors
+{
+    border: 3px solid;
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    margin-top:0;
+}
+
+.armR
+{
+    border: 2px solid;
+    width: 100px;
+    height: 50px;
 }
