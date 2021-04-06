@@ -1,4 +1,0 @@
-live reload - lepsza od live server - Tylko lokalnie
-
-live server:
-https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
