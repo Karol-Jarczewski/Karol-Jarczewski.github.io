@@ -1,6 +1,6 @@
 body
 {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 0;
     margin:0;
 }
@@ -34,14 +34,24 @@ body
 
 .torso
 {   display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
-.armL
+.armL 
 {
-    border: 2px solid;
+    border: 3px solid;
     width: 100px;
     height: 50px;
+    background-color: lightblue;
+}
+
+.handL
+{
+    border: 2px solid #000;
+    width: 80px;
+    height: 35px;
+    margin: 55px;
+    margin-left: -50px;
 }
 
 .tors
@@ -51,11 +61,85 @@ body
     height: 150px;
     margin: 5px;
     margin-top:0;
+    background-color: lightblue;
 }
 
 .armR
 {
-    border: 2px solid;
+    border: 3px solid;
     width: 100px;
     height: 50px;
+    background-color: lightblue;
+}
+
+.handR
+{
+    border: 2px solid #000;
+    width: 80px;
+    height: 35px;
+    margin: 55px;
+    margin-right: -50px;
+}
+
+.thighs
+{
+    display:flex;
+    justify-content: center;
+}
+
+.thighL
+{
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.thighL1, .thighR1
+{    
+    width: 100px;
+    height: 65px;
+    border: 3px solid;
+    margin-bottom: 5px;
+    background-color: lightblue;
+}
+
+.thighR
+{    
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+/* .thighR1 */
+{
+    width: 100px;
+    height: 65px;
+    border: 3px solid;
+    margin-bottom: 5px;
+    background-color: lightblue;
+
+}
+
+.legs
+{
+    display: flex;
+    justify-content: center;
+}
+
+.legL
+{
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.legR
+{
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.leg
+{
+    border: 2px solid;
+    width: 50px;
+    height: 60px;
+    margin-bottom: 5px;
 }
