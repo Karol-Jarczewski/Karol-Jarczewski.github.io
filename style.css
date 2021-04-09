@@ -239,6 +239,7 @@ body
       background-position: center;
       background-color: #222;
       background-blend-mode: overlay;
+      cursor: pointer;
     }
     article .front .text {
       -webkit-transform: translate3d(0, 0, 0);
@@ -264,20 +265,20 @@ body
       transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.4s linear, -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
       opacity: 0;
     }
-    article:hover .front {
+    article:active .front {
       -webkit-transform: rotateY(-180deg);
               transform: rotateY(-180deg);
     }
-    article:hover .front .text {
+    article:active .front .text {
       -webkit-transform: translate3d(-200%, 0, 0);
               transform: translate3d(-200%, 0, 0);
       opacity: 0;
     }
-    article:hover .back {
+    article:active .back {
       -webkit-transform: rotateY(0deg);
               transform: rotateY(0deg);
     }
-    article:hover .back .text {
+    article:active .back .text {
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(100, 0, 0);
       opacity: 1;
