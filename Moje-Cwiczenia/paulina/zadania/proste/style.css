@@ -46,11 +46,11 @@ li, a
 
 section
 {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
+    width: 60%;
     text-align: center;
-    /* width: 60vw; */
 }
 
 p
