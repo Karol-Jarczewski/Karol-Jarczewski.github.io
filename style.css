@@ -1,19 +1,19 @@
-
-
 body
 {
-    /* background-color: lightblue; */
     padding: 0;
     margin:0;
-    background: url("549234-space-galaxy.jpg") no-repeat;
-    background-size: cover;
+    background-color: #fff;
+    /* color: #fff; */
     font-family: 'Lato', sans-serif;
 }
 
 .container
 {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    margin: 0;
+    background: url("549234-space-galaxy.jpg") no-repeat;
+    background-size: cover;
 
 }
 
@@ -21,6 +21,7 @@ body
 {
     display: flex;
     justify-content: space-between;
+    color: #fff;
 }
 
 .menu
@@ -39,24 +40,16 @@ li > a
     color: #fff;
 }
 
-section
-{
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
-    width: 60%;
-    text-align: center;
-}
-
 p
 {
     margin: 5vw;
     text-align: center;
 }
+/* ------------------------------>>> ROBOCIK  <<< ------------------------------ */
 
 .row1
 {
-    margin-top: 4%;
+    margin-top: -5%;
 }
 
 .head, .neck, .hands, .thighs, .legs, .feet
@@ -216,16 +209,18 @@ p
 {
     margin-left: 65px;
 }
+/* ------------------------------>>> KONIEC ROBOCIK  <<< ------------------------------ */
 
+/* ------------------------------>>> FLIP Cart  <<< ------------------------------ */
 
 .v-center {
 
-      -webkit-box-align: center;
+   -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+         align-items: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center;
       height: 100%;
     }
     
@@ -328,8 +323,29 @@ p
     article:nth-child(1) .front h2:before {
       background-image: url(img/chat.svg);
     }
+    /* ------------------------------>>> KONIEC FLIP Cart  <<< ------------------------------ */
+
+    .sections {
+      padding: 50px 0;
+      text-align: justify;
+    }
     
+      .sections:nth-of-type(even) {
+        background: #f3f3f3;
+      }
     
+      .sections *:not(:first-child) {
+        margin-top: 30px;
+      }
+    
+    .containers {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     .footer
     {
       display: flex;
