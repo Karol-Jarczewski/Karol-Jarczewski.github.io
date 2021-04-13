@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth; 
+  /*Płynne przewijanie strony podczas kliknięcia w kotwice Smooth scroll znany ze stron z efektem Parallax*/
+}
+
+body,
+html {
+  height: 100%;
+}
+
 body
 {
     padding: 0;
