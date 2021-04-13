@@ -174,14 +174,14 @@ p
 }
 
 /* .thighR1 */
-{
+/* {
     width: 100px;
     height: 65px;
     border: 3px solid;
     margin-bottom: 5px;
     background-color: lightblue;
 
-}
+} */
 
 .legs
 {
@@ -260,9 +260,9 @@ p
       text-align: center;
     }
     /* .art1, .art2,  .art3,  .art4 */
-    {
+    /* {
       float: left;
-    }
+    } */
     
     article .front,
     article .back {
@@ -354,7 +354,7 @@ p
     
     
     /*SMARTFON PHABLET TABLET */
-    @media (min-width: 1px) and (max-width: 599px) (orientation: portrait){
+    @media (min-width: 1px) and (max-width: 599px) and (orientation: portrait){
       
       article {
         clear: both;
@@ -381,7 +381,7 @@ p
     /*TABLET */
     @media (min-width: 680px) and (max-width: 820px) {
       
-    .art1
+    /* .art1
     {
       float: left;
     }
@@ -401,4 +401,4 @@ p
           /*float: le;*/
       }
       
-    }
+    } */
