@@ -29,6 +29,7 @@ body
     margin: 3vw 1vw;
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 li > a
@@ -265,6 +266,7 @@ p
     } */
     
     article .front,
+    article .third,
     article .back {
       clear: both;
       -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -326,20 +328,20 @@ p
       transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.4s linear, -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
       opacity: 0;
     }
-    article:active .front {
+    article:hover .front {
       -webkit-transform: rotateY(-180deg);
               transform: rotateY(-180deg);
     }
-    article:active .front .text {
+    article:hover .front .text {
       -webkit-transform: translate3d(-200%, 0, 0);
               transform: translate3d(-200%, 0, 0);
       opacity: 0;
     }
-    article:active .back {
+    article:hover .back {
       -webkit-transform: rotateY(0deg);
               transform: rotateY(0deg);
     }
-    article:active .back .text {
+    article:hover .back .text {
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(100, 0, 0);
       opacity: 1;
@@ -391,7 +393,7 @@ p
       /*float: right;*/
     }
     
-    .art3
+    /* .art3
     {
       float: left;
     } 
@@ -401,4 +403,4 @@ p
           /*float: le;*/
       }
       
-    } */
+    } */ */
