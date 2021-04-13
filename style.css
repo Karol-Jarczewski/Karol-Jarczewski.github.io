@@ -355,6 +355,24 @@ p
     }
     
     
+    .footer
+    {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 100px;
+      background: black;
+    }
+
+    .footer > h3
+    {
+
+      /* text-align: center; */
+      /* vertical-align: middle; */
+      color: #fff;
+    }
+
     /*SMARTFON PHABLET TABLET */
     @media (min-width: 1px) and (max-width: 599px) and (orientation: portrait){
       
@@ -381,26 +399,26 @@ p
     }
     
     /*TABLET */
-    @media (min-width: 680px) and (max-width: 820px) {
+    /* @media (min-width: 680px) and (max-width: 820px) {
       
-    /* .art1
+    .art1
     {
       float: left;
     }
     
     .art2
     {
-      /*float: right;*/
+      float: right;
     }
     
-    /* .art3
+    .art3
     {
       float: left;
     } 
     
     .art4 
       {
-          /*float: le;*/
+          /*float: le;
       }
       
-    } */ */
+    } */
