@@ -5,8 +5,60 @@ body
     /* background-color: lightblue; */
     padding: 0;
     margin:0;
-    background-color: #fff;
+    background: url("23-2148273840.jpg") no-repeat;
+    background-size: cover;
     font-family: 'Lato', sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: auto;
+
+}
+
+.header
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu
+{
+    width: 40vw;
+    margin: 3vw 1vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li, a
+{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+
+
+.hero
+{
+    margin-top: 10vh;
+    text-align: center;
+}
+
+section
+{
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    width: 60%;
+    text-align: center;
+}
+
+p
+{
+    margin: 5vw;
+    text-align: center;
 }
 
 .row1
@@ -290,7 +342,7 @@ body
     article:nth-child(1) .front h2:before {
       background-image: url(img/chat.svg);
     }
-    }
+    
     
     /*SMARTFON PHABLET TABLET */
     @media (min-width: 1px) and (max-width: 599px) (orientation: portrait){
