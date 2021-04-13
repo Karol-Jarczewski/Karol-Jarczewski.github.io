@@ -21,6 +21,7 @@ body
 {
     width: 100%;
     height: 100vh;
+    padding: 15vh 0;
     margin: 0;
     background: url("549234-space-galaxy.jpg") no-repeat;
     background-size: cover;
@@ -32,12 +33,20 @@ body
     display: flex;
     justify-content: space-between;
     color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    background-color: #000;
+    z-index: 3;
 }
+
 
 .menu
 {
     width: 40vw;
-    margin: 3vw 1vw;
+    /* margin: 3vw 1vw; */
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -59,7 +68,7 @@ p
 
 .row1
 {
-    margin-top: -5%;
+    /* margin-top: -5%; */
 }
 
 .head, .neck, .hands, .thighs, .legs, .feet

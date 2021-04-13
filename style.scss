@@ -1,0 +1,412 @@
+html {
+    scroll-behavior: smooth; 
+    /*Płynne przewijanie strony podczas kliknięcia w kotwice Smooth scroll znany ze stron z efektem Parallax*/
+  }
+  
+  body,
+  html {
+    height: 100%;
+  }
+  
+  body
+  {
+      padding: 0;
+      margin:0;
+      background-color: #fff;
+      /* color: #fff; */
+      font-family: 'Lato', sans-serif;
+  }
+  
+  .container
+  {
+      width: 100%;
+      height: 100vh;
+      padding: 15vh 0;
+      margin: 0;
+      background: url("549234-space-galaxy.jpg") no-repeat;
+      background-size: cover;
+  
+  }
+  
+  .header
+  {
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 15vh;
+      align-items: center;
+      background-color: #000;
+      z-index: 3;
+  }
+  
+  
+  .menu
+  {
+      width: 40vw;
+      /* margin: 3vw 1vw; */
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+  }
+  
+  li > a
+  {
+      text-decoration: none;
+      list-style: none;
+      color: #fff;
+  }
+  
+  p
+  {
+      margin: 5vw;
+      text-align: center;
+  }
+  /* ------------------------------>>> ROBOCIK  <<< ------------------------------ */
+  
+  .row1
+  {
+      /* margin-top: -5%; */
+  }
+  
+  .head, .neck, .hands, .thighs, .legs, .feet
+  {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  
+  .box
+  {
+      width:50px;
+      height:50px;
+      border: 2px solid #000;
+      background-color: #CEA28A;
+  }
+  
+  .box-neck
+  {
+      width: 20px;
+      height: 30px;
+      border-left: 2px solid;
+      border-right: 2px solid;
+  }
+  
+  .torso
+  {   display: flex;
+      justify-content: center;    
+  }
+  
+  .armL 
+  {
+      border: 3px solid;
+      width: 100px;
+      height: 50px;
+      background-color: lightblue;
+      text-align: center;
+  }
+  
+  .handL, .handR
+  {
+      border: 3px solid #000;
+      width: 80px;
+      height: 35px;
+      margin: 55px;
+  }
+  
+  .handL
+  {
+      margin-left: -50px;
+  }
+  
+  .tors
+  {
+      border: 3px solid;
+      width: 100px;
+      height: 150px;
+      margin: 5px;
+      margin-top:0;
+      background-color: lightblue;
+  }
+  
+  .armR
+  {
+      border: 3px solid;
+      width: 100px;
+      height: 50px;
+      background-color: lightblue;
+      text-align: center;
+  }
+  
+  .handR
+  {
+      margin-right: -50px;
+  }
+  
+  .thighs
+  {
+      display:flex;
+      justify-content: center;
+  }
+  
+  .thighL
+  {
+      flex-direction: column;
+      margin-right: 15px;
+  }
+  
+  .thighL1, .thighR1
+  {    
+      width: 100px;
+      height: 65px;
+      border: 3px solid;
+      margin-bottom: 5px;
+      background-color: lightblue;
+      text-align: center;
+  }
+  
+  .thighL1 > a, .thighR1 > a
+  {
+    text-decoration: none;
+    
+  }
+  
+  .thighR
+  {    
+      flex-direction: column;
+      margin-left: 15px;
+  }
+  
+  .legs
+  {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .legL
+  {
+      flex-direction: column;
+      margin-right: 40px;
+  }
+  
+  .legR
+  {
+      flex-direction: column;
+      margin-left: 40px;
+  }
+  
+  .leg
+  {
+      border: 3px solid;
+      width: 50px;
+      height: 60px;
+      margin-bottom: 5px;
+  }
+  
+  .feet
+  {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .footL, .footR
+  {
+      border: 3px solid;
+      width: 60px;
+      height: 30px;
+      background-color: #B5E61D;
+  
+  }
+  
+  .footL
+  {
+      margin-right: 65px;
+  }
+  
+  .footR
+  {
+      margin-left: 65px;
+  }
+  /* ------------------------------>>> KONIEC ROBOCIK  <<< ------------------------------ */
+  
+  /* ------------------------------>>> FLIP Cart  <<< ------------------------------ */
+  
+  .v-center {
+  
+     -webkit-box-align: center;
+        -ms-flex-align: center;
+           align-items: center;
+      -webkit-box-pack: center;
+         -ms-flex-pack: center;
+       justify-content: center;
+        height: 100%;
+      }
+      
+      article {
+        width: 100px;
+        height: 150px;
+        max-height: 400px;
+        color: white;
+        -webkit-perspective: 1000px;
+                perspective: 1000px;
+        position: relative;
+        text-align: center;
+      }
+      
+      article .front,
+      article .third,
+      article .back {
+        clear: both;
+        -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+           -ms-flex-align: center;
+              align-items: center;
+         -webkit-box-pack: center;
+            -ms-flex-pack: center;
+          justify-content: center;
+        min-height: 100%;
+        height: 150px;
+      }
+      article .front {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+        background-size: cover;
+        background-position: center;
+        background-color: #222;
+        background-blend-mode: overlay;
+        cursor: pointer;
+      }
+      article .front .text {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+      article .back {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        background: darkorange;
+        position: relative;
+        z-index: 1;
+      }
+      article .back .text {
+        padding: 0 1.7em;
+        -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0); /*odpowiedzialne za animacje tekstu na rewersie karty*/
+      }
+      article .text {
+        -webkit-transition: opacity 0.4s linear, -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: opacity 0.4s linear, -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.4s linear;
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.4s linear, -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        opacity: 0;
+      }
+      article:hover .front {
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+      }
+      article:hover .front .text {
+        -webkit-transform: translate3d(-200%, 0, 0);
+                transform: translate3d(-200%, 0, 0);
+        opacity: 0;
+      }
+      article:hover .back {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+      }
+      article:hover .back .text {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(100, 0, 0);
+        opacity: 1;
+      }
+      
+      article:nth-child(1) .front {
+        background-image: url(https://cdn.pixabay.com/photo/2019/06/17/08/39/phone-4279429__340.jpg);
+      }
+      article:nth-child(1) .front h2:before {
+        background-image: url(img/chat.svg);
+      }
+      /* ------------------------------>>> KONIEC FLIP Cart  <<< ------------------------------ */
+  
+      .sections {
+        padding: 50px 0;
+        text-align: justify;
+      }
+      
+        .sections:nth-of-type(even) {
+          background: #f3f3f3;
+        }
+      
+        .sections *:not(:first-child) {
+          margin-top: 30px;
+        }
+      
+      .containers {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+  
+      .footer
+      {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100px;
+        background: black;
+      }
+  
+      .footer > h3
+      {
+        color: #fff;
+      }
+  
+      /*SMARTFON PHABLET TABLET */
+      @media (min-width: 1px) and (max-width: 599px) and (orientation: portrait){
+        
+        article {
+          clear: both;
+          float: none;
+          width: 100%;
+          height: 90%;
+          max-height: 400px;
+          margin: 2% 1em;
+          color: white;
+          -webkit-perspective: 1000px;
+          perspective: 1000px;
+          position: relative;
+          text-align: center;
+      }
+      
+      
+        .art1, .art2,  .art3,  .art4
+        {
+          float: none;
+          clear: both;
+        }
+      }
+      
+      /*TABLET */
+      /* @media (min-width: 680px) and (max-width: 820px) {
+        
+        
+      } */
