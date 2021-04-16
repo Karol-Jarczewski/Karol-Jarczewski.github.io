@@ -1,0 +1,532 @@
+/* Created by Artisteer v4.3.0.60745 */
+
+.responsive body
+{
+   min-width: 240px;
+}
+  
+.responsive img 
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}  
+  
+.responsive .kon-content-layout img,
+.responsive .kon-content-layout video
+{
+   max-width: 100%;
+   height: auto !important;
+}
+
+.responsive.responsive-phone .kon-content-layout img 
+{
+   margin: 1%;
+}
+
+.responsive.responsive-phone .kon-collage,
+.responsive.responsive-tablet .kon-collage {
+   margin: 0 !important;
+}
+
+.responsive .kon-content-layout .kon-sidebar0, 
+.responsive .kon-content-layout .kon-sidebar1, 
+.responsive .kon-content-layout .kon-sidebar2 
+{
+   width: auto !important;
+}
+    
+.responsive .kon-content-layout, 
+.responsive .kon-content-layout-row, 
+.responsive .kon-layout-cell 
+{
+   display: block;
+}
+
+.responsive .kon-content-layout, 
+.responsive .kon-content-layout-row
+{
+   padding: 0;
+}
+    
+.responsive .image-caption-wrapper 
+{
+   width: auto;
+}
+
+.responsive.responsive-tablet .kon-vmenublock,
+.responsive.responsive-tablet .kon-block
+{
+   margin-left: 1%;
+   margin-right: 1%;
+   width: 48%;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .kon-responsive-embed 
+{
+   height: 0;
+   padding-bottom: 56.25%;
+   /* 16:9 */
+    position: relative;
+}
+
+.responsive .kon-responsive-embed iframe,
+.responsive .kon-responsive-embed object,
+.responsive .kon-responsive-embed embed
+{
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.responsive .kon-header 
+{
+   width: auto !important;
+   max-width: none !important;
+   min-height: 100px !important;
+   min-width: 0 !important;
+   margin-right: 1% !important;
+   margin-left: 1% !important;
+   text-align: center;
+}
+
+.default-responsive .kon-header 
+{
+   height: auto;
+}
+
+.default-responsive .kon-header *
+{
+   position: relative;
+   text-align: center;
+   -webkit-transform: none !important;
+   -moz-transform: none !important;
+   -o-transform: none !important;
+   -ms-transform: none !important;
+   transform: none !important;
+}
+
+.default-responsive .kon-header .kon-headline, 
+.default-responsive .kon-header .kon-slogan 
+{
+   display: block !important;
+   top: 0 !important;
+   left: 0 !important;
+   margin: 2% !important;
+   text-align: center !important;
+}
+    
+.default-responsive .kon-header .kon-headline a, 
+.default-responsive .kon-header .kon-slogan 
+{
+   white-space: normal !important;
+}
+
+.default-responsive .kon-header .kon-logo
+{
+   display: inline-block;
+   margin: auto !important;
+   left: auto;
+   top: auto !important;
+   width: auto;
+   height: auto;
+}
+
+.responsive .kon-header .kon-slidenavigator 
+{
+   position: absolute;
+}
+
+.default-responsive .kon-header .kon-positioncontrol 
+{
+   display: block !important;
+   position: relative !important;
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+   margin: 2% auto !important;
+   width: auto !important;
+   height: auto !important;
+}
+
+.responsive .kon-header #kon-flash-area
+{
+   display: none;
+}
+
+/* Search and other elements in header element directly */
+.default-responsive .kon-header>.kon-textblock
+{
+   position: relative !important;
+   display: block !important;
+   margin: 1% auto !important;
+   width: 75% !important;
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+}
+
+.default-responsive .kon-header .kon-textblock 
+{
+   position: relative !important;
+   display: block !important;
+   margin: auto !important;
+   left: 0 !important;
+   right: 0 !important;
+   top: auto !important;
+   height: auto !important;
+   width: auto;
+   background-image: none;
+}
+
+/* '.kon-header *' used noram align, but for '.kon-textblock *' we must force align because of preview */
+.responsive .kon-header .kon-textblock *
+{
+   text-align: center !important;
+}
+
+.default-responsive .kon-header .kon-shapes > .kon-textblock,
+.default-responsive .kon-header .kon-slide-item > .kon-textblock
+{
+   display: none !important;
+}
+
+.default-responsive .kon-header .kon-shapes > .kon-textblock *
+{
+   text-align: center !important;
+   width: auto !important;
+   height: auto !important;
+   display: block;
+}
+
+.default-responsive .kon-header .kon-slider .kon-textblock *
+{
+   text-align: center !important;
+   width: auto !important;
+   height: auto !important;
+   display: block;
+}
+
+/* For icons like facebook, rss, etc. */
+.responsive .kon-header>.kon-textblock>div 
+{
+   width: 100%;
+}
+/* dynamic width nav */
+.responsive nav.kon-nav,
+.responsive .kon-nav-inner
+{
+   width: auto !important;
+   position: relative !important;
+   top: auto !important;
+   left: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   margin-top: 0;
+   margin-bottom: 0;
+   min-width: 0;
+   text-align: left !important;
+}
+
+.responsive nav.kon-nav
+{
+   min-width: 1%;
+}
+
+.responsive .kon-nav 
+{
+   padding-left: 0;
+   padding-right: 0;
+   margin-bottom: 20px;
+}
+
+/* full width hmenu, instead of inline-block */
+.responsive .kon-nav ul.kon-hmenu 
+{
+   float: none;
+   text-align: center;
+   display: none;
+}
+
+/* elements on different lines */
+.responsive .kon-nav ul.kon-hmenu li,
+.responsive .kon-hmenu-extra1,
+.responsive .kon-hmenu-extra2
+{
+   float: none;
+}
+  
+/* horizontal margins */
+.responsive .kon-nav ul.kon-hmenu>li:first-child, 
+.responsive .kon-nav ul.kon-hmenu>li:last-child, 
+.responsive .kon-nav ul.kon-hmenu>li
+{
+   margin-left: 0;
+   margin-right: 0;
+}
+ 
+/* separator */ 
+.responsive .kon-nav ul.kon-hmenu>li:before
+{
+   display: none;
+}
+
+/* vertical distance between items */
+.responsive .kon-nav ul.kon-hmenu a
+{
+   margin-top: 1px !important;
+   margin-bottom: 1px !important;
+   text-align: center !important;
+   height: auto;
+   white-space: normal;
+}
+
+.responsive .kon-nav ul.kon-hmenu>li:first-child>a
+{
+   margin-top: 0 !important;
+}
+
+.responsive .kon-nav ul.kon-hmenu>li:last-child>a
+{
+   margin-bottom: 0 !important;
+}
+
+/* fixes for extended menu */
+.responsive .kon-nav .ext, 
+.responsive .kon-nav ul.kon-hmenu>li>ul, 
+.responsive .kon-nav ul.kon-hmenu>li>ul>li,
+.responsive .kon-nav ul.kon-hmenu>li>ul>li a
+{
+   width: auto !important;
+}
+
+/* submenu position on hover */
+.responsive .kon-nav ul.kon-hmenu ul
+{
+   left: auto !important;
+   right: auto !important;
+   top: auto !important;
+   bottom: auto !important;
+   display: none !important;
+   position: relative !important;
+   visibility: visible !important;
+}
+
+.kon-nav .kon-menu-btn 
+{
+   border: 1px solid #404040;
+   border-radius: 3px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+   display: none;
+   -svg-background: linear-gradient(to bottom, #707070 0, #000 100%);
+   background: -ms-linear-gradient(top, #707070 0, #000 100%);
+   background: -moz-linear-gradient(top, #707070 0, #000 100%);
+   background: -o-linear-gradient(top, #707070 0, #000 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));
+   background: -webkit-linear-gradient(top, #707070 0, #000 100%);
+   background: linear-gradient(to bottom, #707070 0, #000 100%);
+   margin: 3px;
+   outline: none;
+   padding: 5px;
+   position: relative;
+   vertical-align: bottom;
+   width: 20px;
+}
+
+.kon-nav .kon-menu-btn span 
+{
+   background: #E0E0E0;
+   border-radius: 2px;
+   display: block;
+   height: 3px;
+   margin: 3px 1px;
+   position: relative;
+   -moz-transition: background .2s;
+   -o-transition: background .2s;
+   -webkit-transition: background .2s;
+   transition: background .2s;
+}
+
+.kon-nav .kon-menu-btn:hover span
+{
+   background: #f3f3f3;
+}
+
+.responsive .kon-nav .kon-menu-btn 
+{
+   display: inline-block;
+}
+
+.responsive .kon-nav .kon-hmenu.visible 
+{
+   display: block;
+}
+
+.responsive .kon-nav ul.kon-hmenu>li>ul>li:first-child:after 
+{
+   display: none;
+}
+.responsive .kon-nav ul.kon-hmenu ul a
+{
+   padding-left: 4% !important;
+}
+.responsive .kon-nav ul.kon-hmenu ul ul a
+{
+   padding-left: 6% !important;
+}
+.responsive .kon-nav ul.kon-hmenu ul ul ul a
+{
+   padding-left: 8% !important;
+}
+.responsive .kon-nav ul.kon-hmenu ul ul ul ul a
+{
+   padding-left: 10% !important;
+}
+.responsive .kon-nav ul.kon-hmenu ul ul ul ul ul a
+{
+   padding-left: 12% !important;
+}
+  
+.responsive .kon-nav ul.kon-hmenu>li>ul
+{
+   padding: 5px;
+}
+  
+.responsive .kon-nav ul.kon-hmenu>li>ul:before
+{
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.responsive .kon-sheet
+{
+   width: auto !important;
+   min-width: 240px !important;
+   max-width: none !important;
+   margin-right: 1% !important;
+   margin-left: 1% !important;
+   margin-top: 1% !important;
+}
+
+#kon-resp {
+   display: none;
+}
+
+@media all and (max-width: 699px)
+{
+    #kon-resp, #kon-resp-t { display: block; }
+    #kon-resp-m { display: none; }
+}
+
+@media all and (max-width: 480px)
+{
+    #kon-resp, #kon-resp-m { display: block; }
+    #kon-resp-t { display: none; }
+}
+
+#kon-resp-desktop {
+   display: none;
+}
+#kon-resp-tablet-landscape {
+   display: none;
+}
+#kon-resp-tablet-portrait {
+   display: none;
+}
+#kon-resp-phone-landscape {
+   display: none;
+}
+#kon-resp-phone-portrait {
+   display: none;
+}
+
+@media (min-width: 1200px)
+{
+    #kon-resp-desktop { display: block; }
+}
+
+@media (min-width: 980px) and (max-width: 1199px)
+{
+    #kon-resp-tablet-landscape { display: block; }
+}
+
+@media (min-width: 768px) and (max-width: 979px)
+{
+    #kon-resp-tablet-portrait { display: block; }
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+    #kon-resp-phone-landscape { display: block; }
+}
+
+@media (max-width: 479px)
+{
+    #kon-resp-phone-portrait { display: block; }
+}
+.responsive .kon-content-layout, 
+.responsive .kon-content-layout-row, 
+.responsive .kon-layout-cell 
+{
+   display: block;
+}
+
+.responsive .kon-layout-cell 
+{
+   width: auto !important;
+   height: auto !important;
+}
+
+.responsive .kon-content-layout:after, 
+.responsive .kon-content-layout-row:after, 
+.responsive .kon-layout-cell:after 
+{
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+.responsive .responsive-tablet-layout-cell,
+.responsive.responsive-tablet .kon-footer .kon-content-layout .kon-layout-cell 
+{
+   margin: 1%;
+   width: 98% !important;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .responsive-layout-row-2 .responsive-tablet-layout-cell,
+.responsive.responsive-tablet .kon-footer .kon-content-layout .responsive-layout-row-2 .kon-layout-cell
+{
+   width: 48% !important;
+}
+
+.responsive .responsive-layout-row-3 .responsive-tablet-layout-cell,
+.responsive.responsive-tablet .kon-footer .kon-content-layout .responsive-layout-row-3 .kon-layout-cell
+{
+   width: 31% !important;
+}
+.responsive .kon-post
+{
+   border-radius: 0;
+}
+
+.responsive .kon-footer-inner
+{
+   min-width: 0;
+}
+

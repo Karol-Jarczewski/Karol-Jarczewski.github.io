@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reprodruk</title>
+
+
+<style>
+/* Czcionka Exo */
+/*@import url('https://fonts.googleapis.com/css?family=Exo:400,700');*/
+
+#container
+{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  /*border: 1px dotted #000;*/
+}
+/* ----------------------------------- > > > NAGŁÓWEK < < < ----------------------------------- */
+#header
+{
+  width: 1000px;
+  height: 330px;
+  margin: 0 auto 20px;
+  /*margin-bottom: 20px;*/
+  /*border: 2px solid #000;*/
+}
+
+#logo
+{
+  height: 265px;
+  background-image: url(http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/naglowek.jpg); 
+  background-repeat: no-repeat;
+  background-size: 1000px 265px;
+  /*border: 1px solid red;*/
+  /*background-color: yellow;*/
+}
+
+
+/* ----------------------------------- > > > NAWIGACJA < < < ----------------------------------- */
+#nav
+{
+  position: relative;
+  width: 1000px;
+  height: 60px;
+  top: 265px;
+  /*margin-top: 200px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 1px solid blue;*/
+  /*background-color: green;*/
+}
+
+ #menu
+{
+  width: 100%;
+  height: 60px;
+  background-color: #ae271d;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+}
+
+ol
+{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 18px;
+  height: 35px;
+  line-height: 200%;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+ol a
+{
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+ol > li
+{
+  float: left;
+  width: 245px;
+  height: 40px;
+  border-right: 1px solid #fff;
+}
+
+ol > li:last-child
+{
+  border-right: 0;
+}
+
+ol > li:hover > a
+{
+  color: #451717;
+}
+/* ----------------------------------- > > > KONIEC NAWIGACJI < < < ----------------------------------- */
+/* ----------------------------------- > > > KONIEC NAGŁÓWKA < < < ----------------------------------- */
+
+/* ----------------------------------- > > > LEWA KOLUMNA + CONTNENT < < < ----------------------------------- */
+#blok
+{ 
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  /*background-color: yellow;*/
+  margin-top: 30px;
+  /*border: 2px solid #000;*/
+}
+/* ----------------------------------- > > > LEWA KOLUMNA < < < ----------------------------------- */
+#blok1
+{
+  position: absolute;
+  /*float: left;*/
+  width: 235px;
+  height: 100%;
+  /*border: 2px solid red;*/
+}
+
+.blokl
+{
+  height: 271px;
+  margin-bottom: 20px;
+  /*border: 2px solid blue;*/
+}
+
+.blokla
+{
+  height: 71px;
+  /*border: 1px solid #000;*/
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5px;
+  background-color: #ae271d;
+  font-size: 20px;
+  color: #fff;
+}
+/* ----------------------------------- > > > KONTAKT < < < ----------------------------------- */
+.bloklb
+{
+  height: 200px;
+  /*border: 1px solid #000;*/
+  /*background-color: #3B3B3B;*/
+  background-image: url(http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/kontakt.jpg);
+}
+/* ----------------------------------- > > > KONIEC KONTAKT< < < ----------------------------------- */
+
+/* ----------------------------------- > > > O NAS < < < ----------------------------------- */
+.bloklb2
+{
+  height: 200px;
+  /*border: 1px solid #000;*/
+  /*background-color: #3B3B3B;*/
+  background-image: url(http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/onas.jpg);
+  /* ----------------------------------- > > > KONIEC O NAS < < < ----------------------------------- */
+}
+/* ----------------------------------- > > > KONIEC LEWA KOLUMNA< < < ----------------------------------- */
+/* ----------------------------------- > > > CONTNENT < < < ----------------------------------- */
+#blok2
+{ 
+  float: right;
+  position: relative;
+  width: 745px;
+  height: 100%;
+  margin-left: 20px;
+  font-size: 20px;
+  /*border: 2px solid red;*/
+  /*background-color: grey;*/
+}
+
+#blok2a
+{ 
+  height: 71px;
+  top: 50px;
+  /*margin-bottom: 50px;*/
+  /*border: 1px solid #000;*/
+  text-align: center;
+  padding-top: 0.5px;
+  background-color: #ae271d;
+  color: #fff;
+}
+
+#blok2b
+{ 
+  position: absolute;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #000;*/
+  background-color: pink;
+}
+/* ----------------------------------- > > > KONIEC CONTNENT < < < ----------------------------------- */
+/* ----------------------------------- > > > KONIEC LEWA KOLUMNA + CONTNENT < < < ----------------------------------- */
+
+/* ----------------------------------- > > > BELKA "ZDJĘCIA PRODUKTU" < < < ----------------------------------- */
+    #blok3
+    { 
+      position: relative;
+      width: 100%;
+      margin: 5% 0;
+      /*color: #fff;*/
+    }
+
+    #blok3a
+    {
+      position: relative;
+      width: 100%;
+      height: 71px;
+      top: 310px;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 0.5px;
+      background-color: #3B3B3B;
+      color: #fff;
+    }
+
+/*#gallery
+{
+  position: relative;
+  top: 800px;
+  border: 2px solid #000;
+}*/
+/* ----------------------------------- > > > KONIEC BELKA "ZDJĘCIA PRODUKTU" < < < ----------------------------------- */
+
+/* ----------------------------------- > > > GALERIA < < < ----------------------------------- */
+.footborder189800 { right: 14px; bottom: 21px; position: absolute; margin-bottom: 10px;} 
+.allborder189800 {position: relative; margin: auto; padding: 0; font-size: 13px; text-align: center} 
+.insideborder189800 {border: 0px solid #CCCCCC; padding: 5px 0} 
+/* wysokość galerii oraz marginesy prawej kolumny z miniaturkami galerii*/
+#tabelka189800 img {border: 1px solid #CCCCCC; padding: 1px; margin: 4px 9px 4px 9px; position: relative; top: 310px;} 
+#tabelka189800 img.noborder189800 {border: none} 
+#tabelka189800 a.noborder189800:hover img {border: none; padding: 1px} 
+#tabelka189800 {padding: 0;} 
+#tabelka189800 td {padding: 0;border: 0; border-spacing: 0; vertical-align: middle} 
+#tabelka189800 a {text-decoration: none} 
+#tabelka189800 a:hover img {text-decoration: none; border: 2px solid #000; padding:0} 
+#linkfoto189800 a {font-size: 14px; margin:0; border:0; color: #4C83C1; font-family: Arial; text-decoration: none} 
+#tabelka189800 .elementitem189800 {float: left} 
+.ppreview189800 {float: left;} 
+/* szerokość i wysokość elementu Hover */
+.sitemiddle189800 {  opacity: 0; filter: alpha(pacity=0); position: absolute; display: block; top: 310px; margin-left: 11px; width: 740px; text-align: center; transition: all 0.5s ease-out; -webkit-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; height: 620px} 
+#tabelka189800 a:hover span.sitemiddle189800 {opacity: 1; filter: alpha(opacity=100); transition: all 0.5s ease-out; -webkit-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out}
+#tabelka189800 .imgbig1898001 
+{background: url("http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/1.jpg") no-repeat scroll 50% 50%}
+#tabelka189800 .imgbig1898002 
+{background: url("http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/2.jpg") no-repeat scroll 50% 50%}
+#tabelka189800 .imgbig1898003 
+{background: url("http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/3.jpg") no-repeat scroll 50% 50%}
+/* ----------------------------------- > > > KONIEC GALERIA < < < ----------------------------------- */
+</style>
+
+  </head>
+  <body>
+    <div id="container">  
+        <div id="header">
+          <div id="logo">
+          <div id="nav"> <!-- ----------------------------------- > > > MENU < < < ----------------------------------- -->
+                <div id="menu">
+                  <ol>
+                     <li><a href="http://allegro.pl/listing/user/listing.php?us_id=40336868" target="_blank">Wszystkie Aukcje</a></li>
+                     <li><a href="http://allegro.pl/show_user.php?uid=40336868" target="_blank">Opinie</a></li>
+                     <li><a href="http://allegro.pl/SendMailToUser.php?itemId=6285111756&userId=40336868" target="_blank">Napisz do nas</a></li>
+                     <li><a href="http://allegro.pl/my_page.php?uid=40336868" target="_blank">Dostawa</a></li>
+                  </ol>
+             </div>
+          </div>
+        </div>
+                          <!-- ----------------------------------- > > > KONIEC MENU < < < ----------------------------------- -->     
+        <div id="blok">
+
+          <div id="blok1">
+
+            <div class="blokl">
+
+              <div class="blokla"><h3>KONTAKT</h3></div>
+              <div class="bloklb"></div>
+
+            </div>
+
+            <div class="blokl">
+
+              <div class="blokla"><h3>O NAS</h3></div>
+              <div class="bloklb2"></div>
+
+            </div>
+
+        </div>
+
+          <div id="blok2">
+              <div id="blok2a"><h3>Opis przedmiotu</h3></div>
+              <div id="blok2b">
+                 <p class="tresc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet mauris elit. Morbi dignissim vulputate mauris, a tempor risus porttitor lacinia. Quisque et dui tellus, a imperdiet neque. Nam condimentum, purus semper fermentum gravida, purus enim venenatis mauris, at ultricies urna lorem nec lacus. Quisque id ligula in elit tempor rhoncus. Curabitur pretium dolor urna, et hendrerit lorem. Praesent et sem felis. Quisque non felis felis. Etiam euismod nulla est. Praesent orci purus, porta ut blandit a, tincidunt a magna. Etiam commodo bibendum condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent posuere placerat ipsum, at ultrices neque aliquam fringil</p>
+
+                <p class="tresc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet mauris elit. Morbi dignissim vulputate mauris, a tempor risus porttitor lacinia. Quisque et dui tellus, a imperdiet neque. Nam condimentum, purus semper fermentum gravida, purus enim venenatis mauris, at ultricies urna lorem nec lacus. Quisque id ligula in elit tempor rhoncus. Curabitur pretium dolor urna, et hendrerit lorem. Praesent et sem felis. Quisque non felis felis. Etiam euismod nulla est. Praesent orci purus, porta ut blandit a, tincidunt a magna. Etiam commodo bibendum condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent posuere placerat ipsum, at ultrices neque aliquam fringil</p> 
+                </div>
+          </div>
+        </div>
+           <div id="blok3">
+              <div id="blok3a"><h3>ZDJĘCIA PRODUKTU</h3></div>
+          </div>
+        <!-- <div id="gallery"></div> -->
+                              <div id="tabelka189800">
+                        <div id="linkfoto189800" style="margin: auto; display: table"></div><!-- Grafika okna podglądowego -->
+                        <div class="allborder189800" style="width: 1000px">
+                          <div class="insideborder189800">
+                            <div style="width: 984px; text-align: right; margin: 0px auto">
+                              <div class="ppreview189800"><a href="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600" target="_blank" ><img style="margin-bottom: 10px" src="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/1.jpg"/></a></div>
+                              <!-- Grafika nr 1 -->
+                              <a href="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/1.jpg" target="_blank"><img class="ppanel189800" src="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/200x190/1.jpg"/><span class="imgbig1898001 sitemiddle189800" style="z-index: 99">&nbsp;</span></a> 
+                              <!-- Grafika nr 2 -->
+                              <a href="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/2.jpg" target="_blank"><img class="ppanel189800" src="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/200x190/2.jpg"/><span class="imgbig1898002 sitemiddle189800" style="z-index: 98">&nbsp;</span></a> 
+                              <!-- Grafika nr 3 -->
+                              <a href="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/740x600/3.jpg" target="_blank"><img class="ppanel189800" src="http://klient.koncepcyjni.com.pl/szablony/allegro/reprodruk/grafiki/galeria/200x190/3.jpg"/><span class="imgbig1898003 sitemiddle189800" style="z-index: 97">&nbsp;</span></a> 
+                            </div>
+                            <div style="clear: both">&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+    </div>
+  </body>
+</html>

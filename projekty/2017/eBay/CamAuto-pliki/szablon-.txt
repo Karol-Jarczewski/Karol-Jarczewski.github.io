@@ -1,0 +1,30 @@
+﻿Zrobić ramke po kliknięciu w link.
+
+
+https://forum.pasja-informatyki.pl/254563/cr-css-%235-efekty-hover-transition-transform
+
+1.  1 - Menu
+
+2.  2 - Slider
+
+3.  2 - Zakładki
+
+4.  1
+
+5.  11 *poniżej szerokośći okna 1200px można naprawić obrazki przy pomocy media queries.
+
+6.  1
+
+7.  11 *poniżej szerokośći okna 515px można naprawić obrazki przy pomocy media queries.
+
+8.  11
+
+9.  2
+
+10. 2 - zakładki
+Łącznie 13 Divów widocznych i 17 łącznie + ewentualne divy zakładek.
+
+http://klient.koncepcyjni.pl/szablony/ebay/camauto/obrazki/naglowek.jpg
+
+czcionka:
+https://fonts.google.com/?query=EXO

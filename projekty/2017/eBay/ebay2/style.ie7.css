@@ -1,0 +1,141 @@
+/* Created by Artisteer v4.3.0.60745 */
+
+.kon-header, #kon-header-bg, .kon-layout-cell, .kon-layout-wrapper, .kon-footer, .kon-nav, #kon-hmenu-bg, .kon-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.kon-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.kon-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#kon-header-bg 
+{
+   display: none;
+}
+
+.kon-hmenu>li, .kon-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.kon-hmenu, ul.kon-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#kon-hmenu-bg 
+{
+   display: none;
+}
+
+ul.kon-hmenu>li:first-child {
+   padding-right:9px;
+}
+ul.kon-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='kon-hmenu-separator');
+}
+ul.kon-hmenu>li>span.kon-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -9px;
+   width: 9px;
+   height: 37px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.kon-hmenu>li:first-child>span.kon-hmenu-separator
+{
+   display:none;
+}
+
+ul.kon-hmenu ul, .desktop-nav ul.kon-hmenu>li.ext:hover>a{
+   background-color: rgba(66, 86, 92, 0.7) !important;
+}
+
+.kon-content-layout, .kon-content-layout-row, .kon-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.kon-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.kon-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.kon-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.kon-search>input[type="text"] 
+{
+   margin :0;
+}
+
+form.kon-search
+{
+   zoom: 1;
+}
+ul.kon-vmenu, ul.kon-vmenu ul, ul.kon-vmenu li{
+   zoom: 1;
+}
+
+ul.kon-vmenu ul 
+{
+   background-color: transparent;
+}
+
+.kon-postmetadataheader{
+   zoom:1;
+}
+
+.kon-postheadericons span{
+   zoom: 1;
+}
+.kon-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.kon-sidebar1 
+{
+   width: auto;
+   float:none;
+}
+
