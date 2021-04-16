@@ -1,0 +1,595 @@
+@charset "utf-8";
+/* CSS Document Wersja pliku developerska*/
+/* ------------------------ liNIA 430 AWD dla urządzen mobilnych  ------------------------*/
+/* DLA IE8 I STARSZYCH */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+/* KONIEC DLA IE8 I STARSZYCH */
+
+html {
+  scroll-behavior: smooth; 
+  /*Płynne przewijanie strony podczas kliknięcia w kotwice Smooth scroll znany ze stron z efektem Parallax*/
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body
+{
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap
+{
+	width: 100%;
+	margin: 0px;
+}
+
+header
+{
+    position: fixed;
+    top; 0px;
+    height: 16%; /*było 100px*/
+    min-width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0px;
+    z-index: 9;
+}
+
+#logo
+{
+    float: left;
+    background-image: url(img/logo.avif);
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    width: 100px;
+    height: 77px;
+    margin: 0.75% 0 0 3%;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[for="button"] {
+  display: none; 
+}
+
+nav {
+   float: left;
+   width: 100%;
+   overflow: hidden;
+   position: absolute;
+   top: 35%;
+}
+nav ul {
+   clear: both;
+   float: left;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   left: 50%;
+   text-align: center;
+}
+nav ul li {
+   display: block;
+   float: left;
+   list-style: none;
+   margin: 0;
+   padding: 0px 30px;
+   position: relative;
+   right: 50%;
+}
+
+nav ul li a {
+   display: block;
+   margin: 0 0 0 1px;
+   padding: 0px 0px;
+   color: #ffa700;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+
+border-bottom: 2px solid #fff;
+padding-bottom: 5%;
+}
+
+nav ul li a.zaznaczony, #nav ul li a.zaznaczony:hover {
+   color: #fff;
+   background: #000;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 521px) {
+
+* {
+  /* Reset */
+  margin: 0;
+  padding: 0;
+  font: 14px sans-serif;
+}
+
+[for="button"] {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+  cursor: pointer;
+  margin: 3% 0 0 80%;
+}
+
+label, a
+{
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ffb505;
+}
+
+li
+{
+	list-style: none;
+}
+
+nav {
+  max-height: 0;
+	overflow: hidden;
+	transition: max-height .5s ease-in-out;
+	margin: 38px 0px;
+	background: #000;
+}
+
+nav ul li 
+{
+		border:0;
+		width:100%;
+		max-width: 100%;
+		min-width:0;
+		border-bottom:1px solid #333;
+
+	}
+
+nav ul li a 
+	{
+		display: block;
+		width: 520px;
+		text-align: center;
+		padding: 10px 0px;
+
+	}
+
+[type="checkbox"]:checked ~ nav
+{
+  max-height: 415%;
+}
+
+#button:checked + ul
+{
+  transform: translateY(0);
+}
+}
+/* KONIEC NAWIGACJA */
+
+
+
+/* ------------------------------>>> TŁO Deklaracja zagnieżdzona <<< ------------------------------ */
+#tlo
+{
+  min-height: 100%;
+  height: 100vh;
+  background-image: url("img/demolition-machine-5983950_1920.avif");
+  background-image: url("img/demolition-machine-5983950_1920.jpg");
+  z-index: 8;
+}
+
+.col-full 
+{ 
+  width: 100%; 
+  float: none;
+  margin: 0;
+  height: 100%;
+
+}
+
+.parallax {
+  position: relative;
+  margin: 0 0 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    text-shadow: 0 0 20px #000;
+}
+
+
+.haslo {
+    position: relative;
+    top: 70%;
+    z-index: 7;
+    color: white;
+    text-align: center;
+    font-size: 7vw;
+}
+
+.cta
+{
+  display: none;
+}
+
+/* ------------------------------>>> KONIEC TŁO Deklaracja zagnieżdzona  <<< ------------------------------ */
+.section {
+  padding: 50px 0;
+  text-align: justify;
+}
+
+  .section:nth-of-type(even) {
+    background: #f3f3f3;
+  }
+
+  .section *:not(:first-child) {
+    margin-top: 30px;
+  }
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h2
+{
+  margin-top: 50px;
+}
+
+#start
+{
+    position: relative;
+    top: 10%;
+    height: 100%;
+}
+
+#onas
+{
+    position: relative;
+    top: 60%;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#galeria
+{
+    position: relative;
+    top: 60%;
+    height: 100%;
+}
+
+#oferta
+{
+    position: relative;
+    top: 60%;
+    height: 100%;
+}
+
+#dlaczegomy
+{
+    position: relative;
+    top: 60%;
+}
+
+#kontakt
+{
+    position: relative;
+    top: 60%;
+}
+
+/* ------------------------ Moduł Przycisk powrotu ------------------------*/
+/* ------------------------ KOŁO ------------------------*/
+.divgotop
+{
+  width: 100%;
+  height: 100px;
+}
+.divgotop2
+{
+  float: right;
+  position: fixed;
+  top: 69%;
+  left: 85%;
+  margin: 0 5% 0;
+}
+
+.gotop /*koło*/
+{
+  clear: both;
+  position: relative; /*dla wyśrodkowania elementów .arrow oraz p*/
+  background: rgba(25, 25, 25, 0.4);
+  background-size: auto;
+  border-radius: 60px;
+  width: 70px;
+  height: 70px;
+  z-index: 9;
+}
+
+.gotop:hover
+{
+  background: #ffa700;
+  transition: background 1s; /*Łagodne przejście tła w inne tło*/
+}
+/* ------------------------ KONIEC Koła ------------------------*/
+
+/* ------------------------ Strzałka ------------------------*/
+.arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0% auto;
+        border: 0;
+        background: transparent;
+        box-sizing: border-box;
+        width: 0;
+        height: 20px;
+        border-color: transparent transparent transparent  #fff;
+        cursor: pointer;
+        border-style: solid;
+        border-width: 10px 0px 10px 12px; 
+        transform: rotate(270deg); /*Odpowiada za obracanie strzałki strzałka do góry grotem 270deg*/
+        
+    }
+
+.arrow:after {
+        content:""
+        border: 0;       
+        box-sizing: border-box;
+        width: 0;
+        height: 10px;
+        border-color: transparent transparent transparent white;
+        cursor: pointer;
+        border-style: solid;
+        border-width: 5px 0px 5px 7px;
+      position:absolute;
+}
+
+/* ------------------------ KONIEC strzałki ------------------------*/
+
+/* ------------------------ Napis: Do góry ------------------------*/
+a .dogory
+{
+  position: absolute;
+  margin: 38% 15% 33%;
+  text-decoration: none;
+  font-size: 0.55em;
+  color: #fff;
+}
+/* ------------------------ Moduł KONIEC Przycisku powrotu ------------------------*/
+
+
+footer
+{
+  position: relative;;
+  top: 100%;
+  bottom: 0;
+	background: #1A1A1A;
+	height: 110px;
+	max-height: 140px;
+	line-height: 110px;
+	color: #fff;
+	text-align: center;
+	font-size: 16pt;
+}
+/* ------------------------ AWD dla urządzen mobilnych  ------------------------*/
+/*SMARTFON PHABLET TABLET */
+@media (max-width: 1200px) {
+
+header
+{
+    position: fixed;
+    top; 0px;
+    height: 8%;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0px;
+    z-index: 9;
+}
+
+#logo
+{
+    float: left;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    width: 22%;
+    height: 60%;
+    margin: 0.6% 0 0 6%;
+}
+
+
+.haslo {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+    color: white;
+    margin: 65% 0 0;
+    text-align: center;
+    font-size: 7vw;
+}
+
+label, a {
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+/* ------------------------ KOŁO ------------------------*/
+.divgotop2
+{
+  /*float: right;*/
+  position: fixed;
+  top: 81%;
+  left: 75%;
+  z-index: 6;
+}
+/* ------------------------ KONIEC Koła ------------------------*/
+/* ------------------------ Strzałka ------------------------*/
+.arrow {
+  margin-top: 10%;
+        
+    }
+/* ------------------------ KONIEC strzałki ------------------------*/    
+/* ------------------------ Napis: Do góry ------------------------*/
+a .dogory 
+{
+  position: absolute;
+  margin: 40% 27% 33%;
+  text-decoration: none;
+  font-size: 0.61em;
+  color: #fff;
+}
+/* ------------------------ Moduł KONIEC Przycisku powrotu ------------------------*/
+/* ------------------------ Moduł Przycisk "Zadzwoń" Mobile Only ------------------------*/
+a.cta
+  {
+    display: block;
+    position: fixed;
+    top: 92%;
+    width: 100%;
+    height: 5%;
+        padding: 6% 0;
+    border: 2px solid black;
+    background: orange;
+    z-index: 9;
+  }
+/* ------------------------ Moduł KONIEC Przycisku "Zadzwoń" Mobile Only ------------------------*/
+footer
+{
+  position: relative;;
+  top: 100%;
+  margin-top: -40%;
+  background: #1A1A1A;
+  height: 110px;
+  max-height: 140px;
+  line-height: 110px;
+  color: #fff;
+  text-align: center;
+  font-size: 16pt;
+}
+
+  footer > p {
+    line-height: 100px !important;
+    color: #fff;
+    text-align: center;
+    font-size: 16pt;
+
+}
+}
+
+/*SMARTFON iPhone X*/
+@media (max-width: 960px) and (orientation:landscape){
+
+header
+{
+    height: 20%;
+}
+
+#logo
+{
+    border-radius: 40px;
+    width: 10%;
+    height: 60%;
+    margin: 0.65% 0 0.65% 2%;
+}
+
+.haslo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    margin: 27% 0 0; 
+}
+
+nav ul li {
+   padding: 0px 10px;
+   right: 45%;
+}
+
+nav ul li a {
+   display: block;
+   margin: 0 5px 0 5px;
+   padding: 0;
+   font-size: 0.9em;
+   color: #ffa700;
+   text-decoration: none;
+}
+
+#tlo
+{
+  min-height: 100%;
+  height: 100vh;
+  background-image: url("img/demolition-machine-5983950_1920_svgjpe_ar_1_1,c_fill,g_auto__c_scale,w_480.jpg");
+  z-index: 8;
+}
+
+.divgotop2
+{
+  position: fixed;
+  top: 52%;
+  left: 80%;
+  z-index: 6;
+}
+
+.arrow {
+  margin-top: 0%;
+        
+    }
+
+a.cta
+  {
+    position: fixed;
+    top: 85.4%;
+    width: 100%;
+    height: 5%;
+    padding: 2% 0;
+  }
+
+  footer
+{
+  margin-top: -23.8%;
+}
+}
+
+
+/*SMARTFON*/
+@media (max-width: 360px) {
+
+#logo
+{
+    margin: 0.5% 0% 0.5% 6%;
+}
+
+.divgotop2
+{
+  position: fixed;
+  top: 80%;
+  left: 70%;
+  z-index: 6;
+}
+}
