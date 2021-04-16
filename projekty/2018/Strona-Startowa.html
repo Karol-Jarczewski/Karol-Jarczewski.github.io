@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Good & Work Stuff</title>
+    <style>
+body
+{
+    margin: 0;
+    padding: 0;
+}
+/* Czcionka Exo */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+   div, h1, h2 {text-align: center;}
+
+   h2
+   {
+    font-size: 24px;
+    line-height: 50px;
+   }
+
+    .kolumna
+    { 
+      float: left;
+      width: 100%;
+      margin: 0;
+      color: #fff;
+    }
+
+    #good-stuff
+    {
+        float: left;
+        width: 50%;
+        height: 100vh;
+        background: url("img/good-stuff.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0px;
+        z-index: 1;
+    }
+
+    #good-stuff:hover
+    {
+        float: left;
+        width: 50%;
+        height: 100vh;
+        background: url("img/good-stuff-h.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        z-index: 2;
+    }
+       
+    #work-stuff
+    {
+        float: right;
+        width: 50%;
+        height: 100vh; 
+        background: url("img/work-stuff.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0px;
+        z-index: 1;
+    }
+  
+    #work-stuff:hover
+    {
+        float: right;
+        width: 50%;
+        height: 100vh; 
+        background: url("img/work-stuff-h.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+    }
+    
+    a.link
+    {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      font-size: 0;
+      text-align: center;    
+    }
+    </style>
+  </head>
+  <body>
+    <div class="kolumna">
+		<div id="good-stuff">
+    <a class="link" href="http://www.goodstuff.com.pl">WEJŚCIE</a></div>
+    	<div id="work-stuff">
+      <a class="link" href="http://www.workstuff.com.pl">WEJŚCIE</a></div>
+    </div>
+     </div>
+	</div>
+  </body>
+</html>
