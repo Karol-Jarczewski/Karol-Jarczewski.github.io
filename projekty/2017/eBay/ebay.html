@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>eBay</title>
-
-
 <style>
 /* Czcionka Exo */
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
@@ -38,7 +36,6 @@ body
     font-size: 24px;
     line-height: 25px;
    }
-
 /*-------------------------------------- > > > Nagłówek < < < --------------------------------------*/
     #header
     {
@@ -114,31 +111,15 @@ body
   height: 100%;
 }
 
-.back {
-  transform: translateZ(-220px) rotateX(180deg);
-}
-.top {
-  transform: translateY(-220px) rotateX(90deg);
-}
-.bottom {
-  transform: translateY(220px) rotateX(270deg);
-}
-.front {
-  transform: translateZ(220px);
-}
+.back {transform: translateZ(-220px) rotateX(180deg);}
+.top {transform: translateY(-220px) rotateX(90deg);}
+.bottom {transform: translateY(220px) rotateX(270deg);}
+.front {transform: translateZ(220px);}
 
-.back {
-  background-image: url(img/slider_1000x300/slider1.jpg);
-}
-.top {
-  background-image: url(img/slider_1000x300/slider2.jpg);
-}
-.bottom {
-  background-image: url(img/slider_1000x300/slider3.jpg);
-}
-.front {
-  background-image: url(img/slider_1000x300/slider4.jpg);
-}
+.back {background-image: url(img/slider_1000x300/slider1.jpg);}
+.top {background-image: url(img/slider_1000x300/slider2.jpg);}
+.bottom {background-image: url(img/slider_1000x300/slider3.jpg);}
+.front {background-image: url(img/slider_1000x300/slider4.jpg);}
 
 @keyframes example {
   0% { transform: translateZ(-150px) rotateX(0deg); }
@@ -171,7 +152,7 @@ body
       justify-content: space-evenly;
     	width: 100%;
     	margin: 5px 0;
-        color: #fff;
+      color: #fff;
     }
 
     #kolumna1
@@ -180,8 +161,8 @@ body
       justify-content: space-evenly;
     	width: 50%;
     	height: 60px;
-        background-image:linear-gradient(to left, #000, transparent, #000),
-        linear-gradient(45deg, #fff, #000, #fff);        
+      background-image:linear-gradient(to left, #000, transparent, #000),
+      linear-gradient(45deg, #fff, #000, #fff);        
     	margin: 0 5px;
     }
 
@@ -191,19 +172,15 @@ body
       justify-content: space-evenly;
     	width: 50%;
     	height: 60px;
-        background-image:linear-gradient(to left, #000, transparent, #000),
-        linear-gradient(45deg, #fff, #000, #fff);        
+      background-image:linear-gradient(to left, #000, transparent, #000),
+      linear-gradient(45deg, #fff, #000, #fff);        
     	margin: 0 5px;
     }
 
-    .eraser
-    {
-    	clear: both;
-    }
+    .eraser {clear: both;}
 
     #grafikal
     {
-    	/*float: left;*/
     	width: 49%;
     	height: 700px;
     	margin-right: 1px;
@@ -265,9 +242,7 @@ body {
     background-repeat: repeat;
     background-size: auto auto;
 }
-a {
-    color: #000;
-}
+a {color: #000;}
 
 #page {
   margin: 0 4px 550px 3px;
@@ -277,10 +252,10 @@ a {
 #page-wrap  {
   width: 1200px; 
   margin: 0 auto;
-       display: flex;
-     justify-content: center;
-     align-items: center;
-     position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
     .tabs {
@@ -289,9 +264,7 @@ a {
       clear: both;
       margin: 0;
     }
-    .tab {
-      float: left;
-    }
+    .tab {float: left;}
     .tab label { 
       padding: 0; 
       position: relative;
@@ -354,9 +327,8 @@ label img:hover
       z-index: 1;
     }
 
-ul ul {
-    display: none;
-}
+ul ul {display: none;}
+
 section {
     margin: 0 auto;
     margin-top: 0;
@@ -398,9 +370,7 @@ ul
       margin: 0;
     }
     
-    .tab2 {
-      float: left;
-    }
+    .tab2 {float: left;}
 
     .tab2 label {
       font-size: 2em;
@@ -447,19 +417,16 @@ ul
     }
 /* ----------------------------------- > > > KONIEC MENU ZAKŁADKI < < < ----------------------------------- */
 </style>
-
   </head>
   <body>
 	<div id="container">
-
 	<div id="header">
         <div class="span1">
              <img src="img/naglowek.jpg">
         </div>
 	</div>
 <!-------------------------------------- > > > Slider 3D < < < -------------------------------------->
-    <div id="slider">
-
+<div id="slider">
 <div class="scene">
   <div class="cube">
     <div class="side back">
@@ -476,100 +443,79 @@ ul
     </div>
   </div>
 </div>
-
-    </div>
+</div>
 <!-------------------------------------- > > > KONIEC 3D SLIDERA < < < -------------------------------------->
 <!-------------------------------------- > > > MENU Z JĘZYKAMI -------------------------------------->
 <div id="page">
-
   <div id="page-wrap">
-    
     <div class="tabs">
-        
        <div class="tab">
            <input type="radio" id="tab-1" name="tab-group-1" checked>
            <label for="tab-1"><img src="img/flagi_106x78/de.png"></label>
-           
            <div class="content">
            <br>
                <img src="img/menu_1078x479/menude.png">
            </div> 
-       </div>
-        
+       </div>        
        <div class="tab">
            <input type="radio" id="tab-2" name="tab-group-1">
-           <label for="tab-2"><img src="img/flagi_106x78/eng.png"></label>
-           
+           <label for="tab-2"><img src="img/flagi_106x78/eng.png"></label>          
            <div class="content">
            <br>
                <img src="img/menu_1078x479/eng.png">
            </div> 
-       </div>
-        
+       </div>     
         <div class="tab">
            <input type="radio" id="tab-3" name="tab-group-1">
            <label for="tab-3"><img src="img/flagi_106x78/fin.png"></label>
-         
            <div class="content">
            <br>
                <img src="img/menu_1078x479/fin.png">
            </div> 
        </div>
-
        <div class="tab">
            <input type="radio" id="tab-4" name="tab-group-1">
-           <label for="tab-4"><img src="img/flagi_106x78/fra.png"></label>
-           
+           <label for="tab-4"><img src="img/flagi_106x78/fra.png"></label> 
            <div class="content">
            <br>
                <img src="img/menu_1078x479/fra.png">
            </div> 
        </div>
-        
        <div class="tab">
            <input type="radio" id="tab-5" name="tab-group-1">
            <label for="tab-5"><img src="img/flagi_106x78/hisz.png"></label>
-           
            <div class="content">
            <br>
                <img src="img/menu_1078x479/hisz.png">
            </div> 
        </div>
-        
         <div class="tab">
            <input type="radio" id="tab-6" name="tab-group-1">
            <label for="tab-6"><img src="img/flagi_106x78/norwegia.png"></label>
-         
            <div class="content">
            <br>
                <img src="img/menu_1078x479/norw.png">
            </div> 
        </div>
-
        <div class="tab">
            <input type="radio" id="tab-7" name="tab-group-1">
            <label for="tab-7"><img src="img/flagi_106x78/port.png"></label>
-           
            <div class="content">
            <br>
                <img src="img/menu_1078x479/port.png">
            </div> 
        </div>
-        
        <div class="tab">
            <input type="radio" id="tab-8" name="tab-group-1">
            <label for="tab-8"><img src="img/flagi_106x78/szwecja.png"></label>
-           
            <div class="content">
            <br>
                <img src="img/menu_1078x479/szw.png">
            </div> 
        </div>
-        
         <div class="tab">
            <input type="radio" id="tab-9" name="tab-group-1">
            <label for="tab-9"><img src="img/flagi_106x78/wlochy.png"></label>
-         
            <div class="content">
            <br>
                <img src="img/menu_1078x479/ita.png">
@@ -579,49 +525,37 @@ ul
     </div>
   </div>
  <!-- ------------------------------ > > > KONIEC MENU Z JĘZYKAMI < < < ---------------------------------->
-    <section class="baner">
-    <h1> Nazwa przedmiotu </h1>
+    <section class="baner"><h1> Nazwa przedmiotu </h1>
     </section>
-
     <div class="kolumna">
-		<div id="kolumna1">
-    		<h2>numer 38754389574</h2> 
+		<div id="kolumna1"><h2>numer 38754389574</h2> 
     	</div>
 
-    	<div id="kolumna2">
-    		<h2>numer 38754389574</h2>
+    	<div id="kolumna2"><h2>numer 38754389574</h2>
     	</div>
     </div>
-
     <div class="eraser"></div>
-
-    <section class="baner">
-    <h1>Tested VCDS und AutoCom</h1>
+    <section class="baner"><h1>Tested VCDS und AutoCom</h1>
     </section>
-
     <div class="kolumna">
 		<div id="grafikal">
         <div class="span2">
              <img src="img/cart/grafikal.jpg">
         </div>
     	</div>
-
     	<div id="grafikap">
         <div class="span2">
              <img src="img/cart/grafikap.jpg">
         </div>
     	</div>
     </div>
-
 <div class="eraser"></div>
-
     <div class="kolumna">
 		<div id="przedmiot1">
         <div class="span3">
              <img src="img/cart/iteml.jpg">
         </div>
     	</div>
-
     	<div id="przedmiot2">
         <div class="span3">
              <img src="img/cart/itemp.jpg">
@@ -629,58 +563,45 @@ ul
     	</div>
     </div>
 <div class="eraser"></div>
-
 <!-- ----------------------------------- > > > MENU ZAKŁADKI < < < ----------------------------------- -->
 <div id="page2">
-
-  <div id="page-wrap2">
-    
-    <div class="tabs2">
-        
+  <div id="page-wrap2">    
+    <div class="tabs2">        
        <div class="tab2">
            <input type="radio" id="tab-11" name="tab-group-1" checked>
-           <label for="tab-11">Kontakt</label>
-           
+           <label for="tab-11">Kontakt</label>           
            <div class="content">
            <br>
                <img src="img/menu2_1078x479/kontakt.jpg">
            </div> 
-           </div> 
-        
+           </div>         
        <div class="tab2">
            <input type="radio" id="tab-22" name="tab-group-1">
-           <label for="tab-22">Versand</label>
-           
+           <label for="tab-22">Versand</label>           
            <div class="content">
            <br>
                <img src="img/menu2_1078x479/versand.jpg">
            </div> 
-           </div> 
-        
-        <div class="tab2">
+           </div>         
+           <div class="tab2">
            <input type="radio" id="tab-33" name="tab-group-1">
-           <label for="tab-33">Zahlung</label>
-         
+           <label for="tab-33">Zahlung</label>         
            <div class="content">
            <br>
                <img src="img/menu2_1078x479/zahlung.jpg">
            </div> 
            </div> 
-
-       <div class="tab2">
+           <div class="tab2">
            <input type="radio" id="tab-44" name="tab-group-1">
-           <label for="tab-44">Reklamation</label>
-           
+           <label for="tab-44">Reklamation</label>           
            <div class="content">
            <br>
                <img src="img/menu2_1078x479/reclamation.jpg">
            </div> 
-           </div> 
-        
-       <div class="tab2">
+           </div>         
+           <div class="tab2">
            <input type="radio" id="tab-55" name="tab-group-1">
-           <label for="tab-55">Gewährleistung</label>
-           
+           <label for="tab-55">Gewährleistung</label>           
            <div class="content">
            <br>
                <img src="img/menu2_1078x479/gewahrleistung.jpg">
