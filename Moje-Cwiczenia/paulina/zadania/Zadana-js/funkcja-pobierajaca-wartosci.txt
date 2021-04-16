@@ -1,0 +1,11 @@
+napisz funkcje ktora pobiera dwie wartosci i zwraca te dwie wartosci dodane
+zle sformulowane: przyjmuje dwie wartosci
+
+
+    // PUNKT 2 FUNKCJA WYŚWIETLAJĄCA KONKRETNY ELEMENT 
+    function displayViews(index){
+    const titleField = document.querySelector("h2");
+    titleField.innerHTML = views[index].title;
+
+    const imgField = document.querySelector(".content");
+    imgField.innerHTML = "";

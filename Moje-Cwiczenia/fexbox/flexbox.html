@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+<style>
+    body{background:#5d6d7e}
+
+.container{
+    background:#85929e;
+    padding:20px;
+    height:850px;
+    border: red;
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+}
+/* flex-direction: ustawia główną oś Poziomą ROW
+lub Pionową Column */
+.container div{
+    margin:10px;
+    width:200px;
+}
+
+.zielony{
+    background:#58d68d;
+    min-height:100px;
+}
+
+.zolty{
+    background:#f4d03f;
+    min-height:250px;
+}
+
+.niebieski{
+    background:#3498d8;
+    min-height:300px;
+}
+/* ------------------------------>>> Koniec 1  <<< ------------------------------ */
+/* ------------------------------>>> DIV 2  <<< ------------------------------ */
+.container2{
+    background:#85929e;
+    margin-top: 20%;
+    padding:20px;
+    height:850px;
+    border: red;
+    display: flex;
+}
+.container2 div{
+    margin:10px;
+    width:200px;
+}
+
+.zielony2{
+    background:#58d68d;
+    min-height:100px;
+    /* order: 1; */
+}
+
+.zolty2{
+    background:#f4d03f;
+    min-height:250px;
+    /* align-self: flex-start; */
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.niebieski2{
+    background:#3498d8;
+    min-height:300px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+/* ------------------------------>>> KONIEC 2  <<< ------------------------------ */
+/* ------------------------------>>> DIV 3  <<< ------------------------------ */
+.container3{
+    background:#85929e;
+    margin-top:20%;
+    padding:20px;
+    height:850px;
+    border: red;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container3 div{
+    margin:10px;
+    width:200px;
+}
+
+.zielony3{
+    background:#58d68d;
+    height:100px;
+}
+
+.zolty3{
+    background:#f4d03f;
+    height:250px;
+}
+
+.niebieski3{
+    background:#3498d8;
+    height:300px;
+}
+
+/* flex-direction 
+    gdy ma wartość column to
+    justify-content zamienia się z align-items */
+
+/* Skrócone właściwości */
+/* flex-flow: row wrap; to skrót właściwości 
+flex-direction oraz flex-wrap. */
+
+
+/* właściwości odnoszące się tylko dla dziecka */
+/* align-self - nadpisuje wartość align-items dla dziecka.
+    przyjume te same wartości co
+   align-items z tą różnicą że odnośi się do dziecka. */
+
+/* ORDER zmienia kolejność położenia pojedyńczego elementu
+dziecka. */
+</style>
+
+</head>
+<body>
+    <div class="container">
+            <div class="zielony"></div>
+            <div class="zolty"></div>
+            <div class="niebieski"></div>
+    </div>
+
+    <div class="container2">
+            <div class="zielony2"></div>
+            <div class="zolty2"></div>
+            <div class="niebieski2"></div>
+    </div>   
+
+    <div class="container3">
+            <div class="zielony3"></div>
+            <div class="zolty3"></div>
+            <div class="niebieski3"></div>
+    </div> 
+    
+</body>
+</html>
