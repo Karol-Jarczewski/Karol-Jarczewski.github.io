@@ -19,6 +19,8 @@ body{background-color: #354147}
 
 .header
 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background: url("bcg.webp") no-repeat;
@@ -31,7 +33,8 @@ body{background-color: #354147}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid blue;
+    flex: 1;
+    /* border: 2px solid blue; */
 }
 
 ul.nav-left
@@ -42,6 +45,19 @@ ul.nav-left
 ul.nav-right
 {
     margin-right: 4%;
+}
+
+.nav-right > li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right > li > img
+{
+    margin-right: 5px;
+    height: 18px;
 }
 
 .nav-3link
@@ -58,7 +74,7 @@ ul.nav-right
 
 .nav-left, .nav-3link, .nav-right
 {
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 .content-top
@@ -67,8 +83,9 @@ ul.nav-right
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20%;
-    border: 2px solid red;
+    flex: 8;
+    /* margin-top: 20%; */
+    /* border: 2px solid red; */
 }
 
 
