@@ -16,9 +16,9 @@ body{background-color: #354147}
     width: 100%;
 }
 
-.header
+.header__nav
 {
-
+    margin-top: 20px;
 }
 
 .nav-between
@@ -27,11 +27,11 @@ body{background-color: #354147}
     justify-content: space-between;
 }
 
-.nav-between:-moz-first-child
-{
+/* .nav-between:-moz-first-node */
+/* {
     font-size: 1.5em;
     font-weight: 800;
-}
+} */
 
 .nav-evenly
 {
@@ -41,4 +41,18 @@ body{background-color: #354147}
 }
 
 li {margin-right: 10px
+}
+
+.nav-between > li:-moz-first-node
+{
+    font-size:1.5em;
+    font-weight: 800;
+}
+
+.bgc
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url("bgc.webp");
 }
