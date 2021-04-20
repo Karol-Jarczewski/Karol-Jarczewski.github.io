@@ -33,10 +33,25 @@ body{background-color: #354147}
     align-items: center;
 }
 
+.nav-left > li
+{
+    margin-left: 50%;
+}
+
+.nav-right > li
+{
+    margin-right: 50%;
+}
+
 .nav-3link
 {
     display: flex;
     justify-content: center;
+}
+
+.nav-3link > li
+{
+    margin-right: 20px;
 }
 
 .nav-left, .nav-3link, .nav-right
@@ -53,7 +68,5 @@ body{background-color: #354147}
     margin-top: 20%;
     border: 2px solid red;
 }
-
-li {margin-right: 10px}
 
 
