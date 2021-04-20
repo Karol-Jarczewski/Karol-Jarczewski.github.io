@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+
+}
+
+body{background-color: #354147}
+
+.container
+{
+    width: 100%;
+}
+
+.header
+{
+
+}
+
+.nav-between
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-between:-moz-first-child
+{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.nav-evenly
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+li {margin-right: 10px
+}
