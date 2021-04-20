@@ -28,26 +28,32 @@ body{background-color: #354147}
 
 .header__nav
 {
-    margin-top: 20px;
-}
-
-.nav-between
-{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.nav-evenly
+.nav-3link
 {
     display: flex;
     justify-content: center;
-    margin-top: -15px;
+}
+
+.nav-left, .nav-3link, .nav-right
+{
+    margin-top: 2%;
+}
+
+.content-top
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20%;
+    border: 2px solid red;
 }
 
 li {margin-right: 10px}
 
-.nav-between > li:-moz-first-node
-{
-    font-size:1.5em;
-    font-weight: 800;
-}
+
