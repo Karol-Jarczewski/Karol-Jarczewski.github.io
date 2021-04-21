@@ -34,7 +34,7 @@ const handleQuiz = e => {
 	})
 
 	if(isTrue && allChecked) {
-		modal.classList('modal-active')
+		modal.classList.add('modal-active')
 		modalInfo.textContent = 'Brawo! Wszystkie odpowiedzi są poprawne!'
 	}
 	else {
