@@ -1,3 +1,5 @@
+// Cwiczenie z: https://www.youtube.com/watch?v=sMMi7xqipAc 
+
 const form = document.querySelector('.quiz-box')
 const answers = Array.from(document.querySelectorAll('.answer'))
 const allQuestions = document.querySelectorAll('.question')
