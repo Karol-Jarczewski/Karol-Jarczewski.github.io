@@ -1,2 +1,4 @@
-function dodaj2wartości(nr1 + nr2) 
-{let result = nr1 + nr2; return result; console.log("result"); ]
+function dodaj2wartości(1 + 2) 
+{let result = 1 + 2; 
+	return result; 
+	console.log(dodaj2wartosci(1+2)); }
