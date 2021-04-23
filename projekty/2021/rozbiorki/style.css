@@ -33,7 +33,7 @@ body
 header
 {
     position: fixed;
-    top; 0px;
+    top: 0;
     height: 16%; /*było 100px*/
     min-width: 100%;
     max-width: 100%;
@@ -336,7 +336,7 @@ h2 {margin-top: 50px;}
     }
 
 .arrow:after {
-        content:""
+        content:"";
         border: 0;       
         box-sizing: border-box;
         width: 0;
@@ -382,7 +382,7 @@ footer
 header
 {
     position: fixed;
-    top; 0px;
+    top: 0;
     height: 8%;
     min-width: 100%;
     max-width: 100%;
