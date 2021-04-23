@@ -84,8 +84,42 @@ ul.nav-right
     align-items: center;
     justify-content: space-between;
     flex: 8;
-    /* margin-top: 20%; */
-    /* border: 2px solid red; */
 }
+
+.subtitle
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.subtitle > span:first-child
+{
+    display: inline-block;
+    height: 2px;
+    width: 80px;
+    margin-right: 1.8em;
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #fbd784;
+}
+
+.subtitle:first-child
+{
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #FBD784;
+}
+
+.hero > h1
+{
+    font-family: PT serif;
+    font-weight: bold;
+    font-size: 6em;
+    line-height: 100px;
+}
+
+p > span {font-size: 1.5em}
 
 

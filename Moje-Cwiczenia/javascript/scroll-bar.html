@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrool Barr</title>
+    <style>
+        .status
+        {
+            height: 4vh;
+            width: 0%;
+            background-color: cornflowerblue;
+            transition: .6s linear;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        body
+        {
+            margin: 0;
+            height: 500vh;
+            background-image: linear-gradient(45deg, red 0%, orange 100%)
+        }
+    </style>
+</head>
+<body>
+    <div class="status"></div>
+    <script>
+        //window.scrollY - własciwosc informuje, nas w którym miescu jesteśmy przwijając naszą stronę.
+        //document.documentElement.offsetHeight - wysokość naszej całej strony
+        //window.innerHeight - wysokość okna przeglądarki
+        const bar = document.querySelector(".status");
+        const statusBar = () => {
+            currentScroll = Math.round(window.scrollY / 
+            (document.documentElement.offsetHeight - 
+            window.innerHeight) * 100);
+            bar.style.width = currentScroll +"%";
+
+            console.log(currentScroll);
+        }
+        window.addEventListener("scroll", statusBar); //nasluchiwanie na przewijanie
+    </script>
+</body>
+</html>

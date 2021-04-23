@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losowa Liczba</title>
+    <style>
+        body{font-size: 2em;}
+    </style>
+</head>
+<body>
+    
+    <script>
+        const min = 1;
+        const max = 100;
+        const random = Math.floor(Math.random() * (max-min+1) +min);
+
+if (random<50)
+{
+    document.write("Wylosowana liczba jest mniejsza niż 50 <br><br>");
+    document.write("Wylosowałem "+random);
+    console.log("Wylosowana liczba jest mniejsza niż 50 ");
+    console.log("Wylosowałem "+random);
+}
+else if (random<60) {document.write("Liczba jest większa od 60")}
+
+else {
+    document.write("Wylosowana liczba jest większa niż 50 <br><br>");
+    document.write("Wylosowałem "+random);
+    console.log("Wylosowana liczba jest większa niż 50 ");
+    console.log("Wylosowałem "+random);
+}
+    
+    </script>
+</body>
+</html>
