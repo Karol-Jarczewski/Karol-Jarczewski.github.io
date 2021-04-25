@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "AEEA,AAAA,KAAK,CAAC;EACH,SAAS,EAAE,IAAI;CACjB;;AEFD,AAAA,CAAC,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,OAAO;CACjB;;AAED,AAAA,QAAQ,EAAE,OAAO,CAAC;EACf,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,KAAK;CAChB;;AAED,AAAA,CAAC,CAAC;EACC,eAAe,EAAE,IAAI;EACrB,MAAM,EAAE,OAAO;CACjB;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;EACR,UAAU,EAAE,IAAI;CAClB;;AAED,AAAA,GAAG,CAAC;EACD,SAAS,EAAE,IAAI;CACjB;;AAED,AAAA,MAAM,CAAC;EACJ,OAAO,EAAE,CAAC;CACZ;;AC3BD,AAAA,EAAE,CAAC;EACA,SAAS,EAAE,KAAK;CAClB;;AAED,AAAA,CAAC,CAAC;EACC,SAAS,EAAE,GAAG;CAEhB;;AKTD,AAAA,WAAW,CAAC;EACT,gBAAgB,ERKN,IAAI;EQJd,KAAK,EAAE,KAAK;CACd",
+    "sources": [
+        "style.scss",
+        "scss/base/__base-dir.scss",
+        "scss/base/_variables.scss",
+        "scss/base/_mixins.scss",
+        "scss/base/_normalize.scss",
+        "scss/base/_typography.scss",
+        "scss/blocks/components/__components-dir.scss",
+        "scss/blocks/components/_main-navigation.scss",
+        "scss/blocks/layouts/__layouts-dir.scss",
+        "scss/blocks/layouts/_header.scss",
+        "scss/blocks/layouts/_dark-theme.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

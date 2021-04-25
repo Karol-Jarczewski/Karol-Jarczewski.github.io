@@ -1,0 +1,86 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:focus {
+  outline: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 2em;
+}
+
+#ui-frendly
+{
+  text-align: center;
+  margin-top: 5%;
+}
+
+button{margin: 0 20px 0; font-size: 5vh;}
+
+.dark-theme {
+  background-color: #222;
+  color: white;
+}
+
+/* Mapa Mobile First */
+/* style dla mobile piszemy jako ogólne */
+
+@media (min-width: 375px)
+{
+
+}
+
+@media (min-width: 600px)
+{
+
+}
+
+@media (min-width: 768px)
+{
+
+}
+
+@media (min-width: 968px)
+{
+
+}
+
+Zbazpieczenie dla TV
+
+/* MAPA STRONY W XMLu */
+
+/*# sourceMappingURL=style.css.map */
+
+
