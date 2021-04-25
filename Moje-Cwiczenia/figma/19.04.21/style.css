@@ -158,26 +158,26 @@ p > span {font-size: 1.5em}
 
 .bgc__aside--right
 {
-    margin: 11vh 7vh 0 0;
+    margin: 13vh 4vh 0 0;
     /* border: 2px solid red; */
 }
 
 .bgc__aside--right > p
 {
-    margin-bottom: 9vh;
+    margin-bottom: 5.6vh;
 }
 
 .border
 {
     display: inline-block;
-    height: 55vh;
-    margin: 5vh 12vh 0 0;
+    height: 35vh;
+    margin: 9vh 7.5vh 0 0;
     border: 1px solid rgba(255, 255, 255, 0.678);
     z-index: 1;
 
 }
 
-.border2
+/* .border2 */
 {
     display: inline-block;
     /* height: 10vh; */
