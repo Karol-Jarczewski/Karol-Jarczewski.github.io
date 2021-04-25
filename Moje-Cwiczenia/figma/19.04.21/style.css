@@ -198,7 +198,7 @@ p > span {font-size: 1.5em}
 .content__section
 {
     display: flex;
-    /* flex-direction: row; */
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: space-between;
     margin: 15vh 0;
