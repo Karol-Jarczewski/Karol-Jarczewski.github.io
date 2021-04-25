@@ -140,19 +140,17 @@ ul.nav-right
     color: #FBD784;
 }
 
-.subtitle > p
-{
-    color: #ee1111c0;
-    font-size: 44px;
-    /* NIE DZIALA P W .SUBTITLE */
-}
-
 .hero > h1
 {
     font-family: PT serif;
     font-weight: bold;
     font-size: 6em;
     line-height: 100px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.hero > p
+{
     color: rgba(255, 255, 255, 0.678);
 }
 
@@ -173,20 +171,17 @@ p > span {font-size: 1.5em}
 {
     display: inline-block;
     height: 55vh;
-    font-size: 1em;
-    line-height: 2em;
     margin: 5vh 12vh 0 0;
     border: 1px solid rgba(255, 255, 255, 0.678);
     z-index: 1;
 
 }
 
-.border > p
+.border2
 {
     display: inline-block;
-    height: 10vh;
-    font-size: 1em;
-    line-height: 2em;
-    border: 1px solid red;
+    /* height: 10vh; */
+    /* margin: 5vh 12vh 0 0; */
+    border: 1px solid #fff;
     z-index: 2;
 }
