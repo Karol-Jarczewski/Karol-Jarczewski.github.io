@@ -229,6 +229,12 @@ p > span {font-size: 1.5em}
     margin-right: 10vh;
 }
 
+.content--row1
+{
+    font-size: 12px;
+    color: #FBD784;
+}
+
 .content--row2, .content--row3
 {
     margin-top: 3vh;
