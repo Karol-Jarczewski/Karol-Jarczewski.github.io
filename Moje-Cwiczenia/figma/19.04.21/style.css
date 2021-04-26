@@ -220,6 +220,24 @@ p > span {font-size: 1.5em}
     margin-right: 15vh;
 }
 
+.content--row2
+{
+    margin-top: 3vh;
+}
+
+.content--row3
+{
+    margin-top: 3vh;
+    line-height: 2.5vh;
+}
+
+.content--row4 > p
+{
+    color: #FBD784 !important;
+    margin-top: 3vh;
+
+}
+
 .footer
 {
     display: flex;
