@@ -9,7 +9,7 @@
 
 }
 
-body{background-color: #354147}
+body {background-color: #0B1D26;}
 
 .container
 {
@@ -129,7 +129,7 @@ ul.nav-right
     margin-right: 1.8em;
     font-size: 1em;
     line-height: 2em;
-    background-color: #fbd784;
+    background-color: rgba(251, 215, 132, 0.678);
 }
 
 .subtitle:first-child
@@ -137,7 +137,7 @@ ul.nav-right
     font-family: Lato;
     font-weight: 800;
     font-size: 1.2em;
-    color: #FBD784;
+    color: rgba(251, 215, 132, 0.678);
 }
 
 .hero > h1
@@ -167,24 +167,31 @@ p > span {font-size: 1.5em}
     margin-bottom: 5.6vh;
 }
 
-.border
+.border-column
 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border--long
+{
+    /* display: inline-block; */
     height: 35vh;
     margin: 9vh 7.5vh 0 0;
-    border: 1px solid rgba(255, 255, 255, 0.678);
+    border: 1px solid rgba(255, 255, 255, 0.514);
     z-index: 1;
 
 }
 
-/* .border2 */
-/* {
-    display: inline-block;
+.border--short
+{
+    /* display: inline-block; */
     height: 10vh;
-    margin: 5vh 12vh 0 0;
-    border: 1px solid #fff;
-    z-index: 2;
-} */
+    margin: -35vh 7.5vh 0 0;
+    border-right: 2px solid #fff;
+    z-index: 20;
+}
 
 .content
 {
@@ -192,7 +199,7 @@ p > span {font-size: 1.5em}
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #0B1D26;
+    /* background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%); */
 }
 
 .content__section
@@ -204,7 +211,7 @@ p > span {font-size: 1.5em}
     margin: 15vh 0;
 }
 
-.content__colL
+.content__colL, .content__colR
 {
     display: flex;
     flex-direction: column;
@@ -212,3 +219,20 @@ p > span {font-size: 1.5em}
     width: 40vh;
     margin-right: 15vh;
 }
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10vh 10vh;
+}
+
+.footer__Right--nav
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul {margin: 0 10vh}
