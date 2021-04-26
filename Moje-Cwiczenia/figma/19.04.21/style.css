@@ -228,6 +228,12 @@ p > span {font-size: 1.5em}
     margin: 10vh 10vh;
 }
 
+.footer__Left > p
+{
+    font-size: 14px;
+    margin: 2vh 0 5vh;
+}
+
 .footer__Right--nav
 {
     display: flex;
@@ -236,3 +242,15 @@ p > span {font-size: 1.5em}
 }
 
 ul {margin: 0 10vh}
+
+ul > h3
+{
+    color: #FBD784;
+    margin-bottom: 4vh;
+}
+
+ul > li
+{
+    font-size: 14px;
+    margin-top: 2vh;
+}
