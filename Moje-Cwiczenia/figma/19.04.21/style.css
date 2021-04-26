@@ -219,6 +219,7 @@ p > span {font-size: 1.5em}
     margin: 15vh 0;
 }
 
+
 .content__colL, .content__colR
 {
     display: flex;
@@ -228,21 +229,22 @@ p > span {font-size: 1.5em}
     margin-right: 10vh;
 }
 
-.content--row2
+.content--row2, .content--row3
 {
     margin-top: 3vh;
 }
 
-.content--row3
+
+.content--row3 > p
 {
-    margin-top: 3vh;
-    line-height: 2.5vh;
+    line-height: 1.8;
 }
 
 .content--row4 > a
 {
     color: #FBD784 !important;
-    margin-top: 3vh;
+    margin-top: 33px;
+    line-height: 4;
 
 }
 
