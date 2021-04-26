@@ -1,3 +1,11 @@
+/*
+Problematyka
+link instagrama nie dziala
+gradientd na main > content nie działa
+GET STARTED zawija się
+read-more nie che się obniżyć 
+*/
+
 *
 {
     margin: 0;
@@ -216,7 +224,7 @@ p > span {font-size: 1.5em}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vh;
+    width: 40vh;
     margin-right: 10vh;
 }
 
