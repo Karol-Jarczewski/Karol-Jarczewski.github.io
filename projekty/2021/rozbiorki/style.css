@@ -20,8 +20,9 @@ body
 {
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
 	font-size: 1.5rem;
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .wrap
@@ -283,22 +284,17 @@ h2 {margin-top: 50px;}
 /* ------------------------ KOŁO ------------------------*/
 .divgotop
 {
-  width: 100%;
-  height: 100px;
-}
-.divgotop2
-{
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
   top: 69%;
-  left: 85%;
-  margin: 0 5% 0;
+  right: 5%;
 }
 
-.gotop /*koło*/
+.gotop
 {
-  clear: both;
-  position: relative; /*dla wyśrodkowania elementów .arrow oraz p*/
+  display: flex;
+  justify-content: center;
   background: rgba(25, 25, 25, 0.4);
   background-size: auto;
   border-radius: 60px;
@@ -310,55 +306,25 @@ h2 {margin-top: 50px;}
 .gotop:hover
 {
   background: #ffa700;
-  transition: background 1s; /*Łagodne przejście tła w inne tło*/
+  transition: background 1s;
 }
 /* ------------------------ KONIEC Koła ------------------------*/
 
 /* ------------------------ Strzałka ------------------------*/
 .arrow {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: 0% auto;
+        width: 0;
+        height: 25px;
+        margin-top: 10%;
         border: 0;
         background: transparent;
-        box-sizing: border-box;
-        width: 0;
-        height: 20px;
         border-color: transparent transparent transparent  #fff;
         cursor: pointer;
         border-style: solid;
-        border-width: 10px 0px 10px 12px; 
-        transform: rotate(270deg); /*Odpowiada za obracanie strzałki strzałka do góry grotem 270deg*/
+        border-width: 15px 0px 15px 20px; 
+        transform: rotate(270deg);
         
     }
-
-.arrow:after {
-        content:"";
-        border: 0;       
-        box-sizing: border-box;
-        width: 0;
-        height: 10px;
-        border-color: transparent transparent transparent white;
-        cursor: pointer;
-        border-style: solid;
-        border-width: 5px 0px 5px 7px;
-        position: absolute;
-}
-
 /* ------------------------ KONIEC strzałki ------------------------*/
-
-/* ------------------------ Napis: Do góry ------------------------*/
-a .dogory
-{
-  position: absolute;
-  margin: 38% 15% 33%;
-  text-decoration: none;
-  font-size: 0.55em;
-  color: #fff;
-}
 /* ------------------------ Moduł KONIEC Przycisku powrotu ------------------------*/
 
 

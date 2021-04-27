@@ -16,11 +16,10 @@ gradientd na main > content nie działa
 
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+body {background-color: #0B1D26}
 
-body {background-color: #0B1D26;}
+.flex {display: flex;}
+
 
 .container
 {
@@ -28,9 +27,8 @@ body {background-color: #0B1D26;}
     height: auto;
 }
 
-.header
+.header, .flex
 {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -39,30 +37,17 @@ body {background-color: #0B1D26;}
     background-position: center;
 }
 
-.header__nav
+.header__nav, .flex
 {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1;
     /* border: 2px solid blue; */
 }
 
-ul.logo-left
+ul.nav-left
 {
     margin-left: 4%;
-}
-
-.nav-3link
-{
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-}
-
-.nav-3link > li
-{
-    margin-right: 20px;
 }
 
 ul.nav-right
@@ -72,7 +57,6 @@ ul.nav-right
 
 .nav-right > li
 {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -83,31 +67,38 @@ ul.nav-right
     height: 18px;
 }
 
+.nav-3link, .flex
+{
+    justify-content: center;
+    font-size: 14px;
+}
+
+.nav-3link > li
+{
+    margin-right: 20px;
+}
 
 /* .nav-left, .nav-3link, .nav-right
 {
     margin-top: 2%;
 } */
 
-.content-top
+.content-top, .flex
 {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex: 8;
 }
 
-.bgc__aside
+.bgc__aside, .flex
 {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .bgc__aside--left
 {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -119,16 +110,14 @@ ul.nav-right
     height: 25px;
 }
 
-.bgc__aside--left img
+.bgc__aside--left img, .flex
 {
-    display: flex;
     flex-direction: column;
     margin-top: 45%;
 }
 
-.subtitle
+.subtitle, .flex
 {
-    display: flex;
     align-items: center;
 
 }
@@ -166,11 +155,7 @@ ul.nav-right
     color: rgba(255, 255, 255, 0.678);
 }
 
-a > span 
-{
-    font-size: 1.5em;
-    color: rgba(255, 255, 255, 0.678);
-}
+p > span {font-size: 1.5em}
 
 .bgc__aside--right
 {
@@ -183,9 +168,8 @@ a > span
     margin-bottom: 5.6vh;
 }
 
-.border-column
+.border-column, .flex
 {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -209,18 +193,16 @@ a > span
     z-index: 20;
 }
 
-.content
+.content, .flex
 {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     /* background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%); */
 }
 
-.content__section
+.content__section, .flex
 {
-    display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: space-between;
@@ -228,12 +210,11 @@ a > span
 }
 
 
-.content__colL, .content__colR
+.content__colL, .content__colR, .flex
 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25vw;
+    width: 40vh;
     margin-right: 10vh;
 }
 
@@ -252,7 +233,6 @@ a > span
 .content--row3 > p
 {
     line-height: 1.8;
-    font-size: 13px;
 }
 
 .content--row4 > a
@@ -263,9 +243,8 @@ a > span
 
 }
 
-.footer
+.footer, .flex
 {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10vh 10vh;
@@ -277,9 +256,8 @@ a > span
     margin: 2vh 0 5vh;
 }
 
-.footer__Right--nav
+.footer__Right--nav, .flex
 {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -296,66 +274,6 @@ ul > li
 {
     font-size: 14px;
     margin-top: 2vh;
-}
-
-
-@media screen and (max-device-width: 360px)
-{
-
-    .header
-    {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 100vh;
-        background: url("bcg.webp") no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .header__nav
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex: 1;
-        /* border: 2px solid blue; */
-    }
-    
-    ul.logo-left
-    {
-        margin-left: 4%;
-    }
-    
-    .nav-3link
-    {
-        display: flex;
-        justify-content: center;
-        font-size: 14px;
-    }
-    
-    .nav-3link > li
-    {
-        margin-right: 20px;
-    }
-    
-    ul.nav-right
-    {
-        margin-right: 4%;
-    }
-    
-    .nav-right > li
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .nav-right > li > img
-    {
-        margin-right: 5px;
-        height: 18px;
-    }
 }
 
 @media screen and (max-device-width: 768px)
