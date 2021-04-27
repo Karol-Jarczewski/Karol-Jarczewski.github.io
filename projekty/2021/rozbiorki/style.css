@@ -35,7 +35,7 @@ header
 {
     position: fixed;
     top: 0;
-    height: 16%; /*było 100px*/
+    height: 16%;
     min-width: 100%;
     max-width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -47,6 +47,7 @@ header
 {
     float: left;
     background-image: url(img/logo.avif);
+    background-image: url(img/logo.png);
     background-repeat: no-repeat;
     border-radius: 40px;
     width: 100px;
@@ -58,13 +59,14 @@ header
 
 [for="button"] {display: none;}
 
-nav {
+nav
+{
    float: left;
    width: 100%;
    overflow: hidden;
    position: absolute;
    top: 35%;
-    }
+}
 
 nav ul {
    clear: both;
@@ -108,7 +110,6 @@ nav ul li a.zaznaczony, #nav ul li a.zaznaczony:hover {
 @media screen and (max-width: 521px) {
 
 * {
-  /* Reset */
   margin: 0;
   padding: 0;
   font: 14px sans-serif;
@@ -135,7 +136,8 @@ li {list-style: none;}
 nav {
   max-height: 0;
 	overflow: hidden;
-	transition: max-height .5s ease-in-out;
+    /* poprawić nie nimuje się rozmiarów ani kierunków w ten sposób */
+	transition: max-height .5s ease-in-out; 
 	margin: 38px 0px;
 	background: #000;
 }
@@ -170,9 +172,6 @@ nav ul li a
 }
 }
 /* KONIEC NAWIGACJA */
-
-
-
 /* ------------------------------>>> TŁO Deklaracja zagnieżdzona <<< ------------------------------ */
 #tlo
 {
@@ -389,28 +388,23 @@ label, a {
     text-decoration: none;
 }
 /* ------------------------ KOŁO ------------------------*/
-.divgotop2
+.divgotop
 {
-  /*float: right;*/
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
-  top: 81%;
-  left: 75%;
-  z-index: 6;
+  top: 69%;
+  right: 5%;
 }
-/* ------------------------ KONIEC Koła ------------------------*/
-/* ------------------------ Strzałka ------------------------*/
-.arrow {margin-top: 10%;}
-/* ------------------------ KONIEC strzałki ------------------------*/    
-/* ------------------------ Napis: Do góry ------------------------*/
-a .dogory 
+
+.gotop
 {
-  position: absolute;
-  margin: 40% 27% 33%;
-  text-decoration: none;
-  font-size: 0.61em;
-  color: #fff;
+  height: 60px;
 }
+
+/* ------------------------ KONIEC Koła ------------------------*/
 /* ------------------------ Moduł KONIEC Przycisku powrotu ------------------------*/
+
 /* ------------------------ Moduł Przycisk "Zadzwoń" Mobile Only ------------------------*/
 a.cta
   {
