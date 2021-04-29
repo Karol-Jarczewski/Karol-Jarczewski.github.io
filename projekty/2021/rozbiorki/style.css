@@ -388,15 +388,6 @@ label, a {
     text-decoration: none;
 }
 /* ------------------------ KOŁO ------------------------*/
-.divgotop
-{
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 69%;
-  right: 5%;
-}
-
 .gotop
 {
   height: 60px;

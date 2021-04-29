@@ -11,7 +11,15 @@ checkbox.addEventListener('change', () => {
 //    document.querySelector('body').classList.toggle('dark-theme');
 // })
 
+//element SELEKTOR.classList.Nazwa
 
+//element = Selektor = body w tym przypadku
+//.classList = metoda, która zawiera w sobie wszystkie klasy znaczników
+//.toggle = przy pomocy tego do zmiany używamy chechboxa w htmlu
+//('nazwa-klasy'); a w tym przypadku to ('dark-theme');
+
+//element.classList.add('start') dodaje klase start
+//element.classList.remove('start') usuwa klase START
 
 
 

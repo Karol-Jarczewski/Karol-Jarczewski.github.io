@@ -1,8 +1,7 @@
 /*
 Problematyka
 link instagrama nie dziala
-Poniżej HERO zrobić KOTWICE do contentu
-gradientd na main > content nie działa
+gradiend na main > content nie działa
 */
 
 *
@@ -98,28 +97,28 @@ ul.nav-right
     flex: 8;
 }
 
-.bgc__aside
+.bgc-aside
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.bgc__aside--left
+.bgc-aside__left
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.bgc__aside--left > p
+.bgc-aside__left > p
 {
     transform: rotateZ(90deg);
     width: 100px;
     height: 25px;
 }
 
-.bgc__aside--left img
+.bgc-aside__left img
 {
     display: flex;
     flex-direction: column;
@@ -172,15 +171,14 @@ a > span
     color: rgba(255, 255, 255, 0.678);
 }
 
-.bgc__aside--right
+.bgc-aside__right
 {
-    margin: 13vh 4vh 0 0;
-    /* border: 2px solid red; */
+    margin: 13vh 2vw 0 0;
 }
 
-.bgc__aside--right > p
+.bgc-aside__right > p
 {
-    margin-bottom: 5.6vh;
+    margin-bottom: 5.5vh;
 }
 
 .border-column
@@ -188,23 +186,21 @@ a > span
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8vh 4vw 0 0;
 }
 
 .border--long
 {
-    /* display: inline-block; */
     height: 35vh;
-    margin: 9vh 7.5vh 0 0;
     border: 1px solid rgba(255, 255, 255, 0.514);
     z-index: 1;
-
 }
 
 .border--short
 {
     /* display: inline-block; */
     height: 10vh;
-    margin: -35vh 7.5vh 0 0;
+    margin-top: -19vw;
     border-right: 2px solid #fff;
     z-index: 20;
 }
@@ -268,23 +264,23 @@ a > span
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 10vh 10vh;
+    margin: 0 10vh;
 }
 
-.footer__Left > p
+.footer-left > p
 {
     font-size: 14px;
     margin: 2vh 0 5vh;
 }
 
-.footer__Right--nav
+.footer-right
 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-ul {margin: 0 10vh}
+ul.footer-nav__container {margin: 0 5vh}
 
 ul > h3
 {
@@ -297,7 +293,87 @@ ul > li
     font-size: 14px;
     margin-top: 2vh;
 }
+/*
+------------------------------------------------------------------------------------------------------
+URZĄDENIA MOBILNE
+------------------------------------------------------------------------------------------------------
+*/
 
+@media screen and (max-device-width: 768px)
+{
+
+    .content-top
+{
+    flex: 30;
+}
+
+    .bgc-aside__left
+    {
+      margin-top: 4.3em;
+    }
+
+    .border-width
+    {
+      height: 1.25px;
+      width: 40px;
+      margin-right: .3em;
+    }
+
+    .subtitle:first-child {font-size: .8em;}
+
+    .hero > h1
+    {
+       font-size: 3em;
+       line-height: 1em;
+    }
+
+    a > span 
+    {
+       font-size: 1em;
+    }
+
+    .bgc-aside__right
+    {
+        margin-top: 0;
+    }
+
+    .bgc-aside__right > p
+    {
+        margin: 1vh 0;
+    }
+
+    .border-column
+    {
+        margin-top: 0vh;
+    }
+
+    .border--long
+    {
+        height: 12vh;
+    }
+
+    .border--short
+    {
+        height: 3vh;
+        margin: -12vh 0vh 0 0;
+        border-right: 2px solid #fff;
+        z-index: 20;
+    }
+
+    .footer
+{
+    margin: 0 2vh;
+}
+
+    .footer-left > p
+{
+    font-size: 14px;
+    margin: 2vh 0 5vh;
+}
+
+    ul.footer-nav__container {margin: 0 1vh}
+
+}
 
 @media screen and (max-device-width: 360px)
 {
@@ -306,8 +382,8 @@ ul > li
     {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        height: 100vh;
+        width: 100%;
+        height: auto;
         background: url("bcg.webp") no-repeat;
         background-size: cover;
         background-position: center;
@@ -355,13 +431,5 @@ ul > li
     {
         margin-right: 5px;
         height: 18px;
-    }
-}
-
-@media screen and (max-device-width: 768px)
-{
-    .content__colR
-    {
-        order: 1;
     }
 }
