@@ -1,4 +1,5 @@
 /*
+Desktop first niestety
 Problematyka
 link instagrama nie dziala
 gradiend na main > content nie działa
@@ -359,6 +360,11 @@ URZĄDENIA MOBILNE
         border-right: 2px solid #fff;
         z-index: 20;
     }
+
+    .content__section
+{
+    margin: 10vh 0;
+}
 
     .footer
 {
