@@ -57,30 +57,34 @@ button{margin: 0 20px 0; font-size: 5vh;}
 /* Mapa Mobile First */
 /* style dla mobile piszemy jako ogólne */
 
+
+/* Style podane dla mobile First */
 @media (min-width: 375px)
 {
 
 }
 
-@media (min-width: 600px)
+@media (min-width-device: 480px)
 {
 
 }
 
-@media (min-width: 768px)
+@media (min-width: 600px) 520px
 {
 
 }
 
-@media (min-width: 968px)
+@media (min-width: 768px) 720px
+{
+
+}
+
+@media (min-width: 968px) 960px
 {
 
 }
 
 /* Zbazpieczenie dla TV */
 
-/* MAPA STRONY W XMLu */
-
-/*# sourceMappingURL=style.css.map */
 
 
