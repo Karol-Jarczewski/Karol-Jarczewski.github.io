@@ -390,6 +390,11 @@ URZĄDENIA MOBILNE
     {
         order: 2;
     }
+
+    .content__colL, .content__colR
+    {
+        margin: 1vh 0;
+    }
 }
 
 @media screen and (max-device-width: 375px)
