@@ -234,6 +234,7 @@ a > span
 .content__row1
 {
     font-size: 12px;
+    line-height: 5;
     color: #FBD784;
 }
 
@@ -366,7 +367,7 @@ URZĄDENIA MOBILNE
     .content__colL, .content__colR
     {
         width: 300px;
-        margin: 10vh 0;
+        margin: 10vh 5vw;
     }
 
     .footer
