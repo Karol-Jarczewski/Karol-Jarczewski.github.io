@@ -455,6 +455,11 @@ URZĄDENIA MOBILNE
         height: 18px;
     }
 
+    .hero > h1
+    {
+       font-size: 1.3em;
+       line-height: 1.3em;
+    }
 
     .content__colL
 {
